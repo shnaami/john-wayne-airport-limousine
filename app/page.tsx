@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Car, CheckCircle2, Clock3, Luggage, MapPin, Phone, Plane, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CheckCircle2, Clock3, Luggage, MapPin, Phone, Plane, ShieldCheck, Sparkles } from "lucide-react";
 import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF, POPULAR_ROUTE_SLUGS, ROUTES } from "./site-data";
 
 const interior = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_55_07_UTC_The_interior_of_the_terminal_at_John_Wayne_Airport_in_Orange_County%2C_California.jpg";
@@ -7,13 +7,26 @@ const terminal = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-
 const aircraft = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_56_23_UTC_A_United_Airlines_Boeing_737_at_John_Wayne_Orange_County_Airport_in_Orange_County%2C_California.jpg";
 const popularRoutes = POPULAR_ROUTE_SLUGS.map(slug=>ROUTES.find(r=>r.slug===slug)!).filter(Boolean);
 
-function Brand(){return <Link href="/" className="brand legacyBrand"><span className="legacyMark"><Car size={22}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
 
 export default function Home() {
   return <>
     <header className="topbar"><div className="shell nav"><Brand/><nav><a href="#service">Airport Service</a><a href="#routes">Popular Routes</a><Link href="/service-areas">All Cities</Link><a href="#why">Why Us</a></nav><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></header>
     <main>
-      <section className="hero" style={{backgroundImage:`linear-gradient(90deg,rgba(4,9,20,.92),rgba(4,9,20,.62),rgba(4,9,20,.12)),url("${terminal}")`}}><div className="shell heroGrid"><div className="heroCopy"><p className="kicker"><Sparkles size={15}/> Orange County's private SNA transportation specialist</p><h1>John Wayne Airport<br/><em>limousine & car service</em></h1><p className="lead">Private, prearranged transportation to and from SNA with professional chauffeurs, luxury sedans, SUVs and Sprinters serving Orange County and Southern California.</p><div className="actions"><a className="btn primary" href={BOOKING_URL} target="_blank" rel="noreferrer">Reserve your ride <ArrowUpRight size={18}/></a><a className="btn glass" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div><div className="trustRow"><span><CheckCircle2/>Flight-aware pickup</span><span><CheckCircle2/>Door-to-terminal</span><span><CheckCircle2/>24/7 reservations</span></div></div><div className="flightCard"><p>JOHN WAYNE AIRPORT</p><div className="iata">SNA</div><h3>Arrive relaxed.<br/>Leave on schedule.</h3><div className="mini"><Plane/><span>Terminals A · B · C</span></div><div className="mini"><MapPin/><span>18601 Airport Way, Santa Ana</span></div></div></div></section>
+      <section className="hero premiumHero" style={{backgroundImage:`linear-gradient(180deg,rgba(4,14,40,.12),rgba(4,14,40,.36) 52%,rgba(2,8,22,.88)),linear-gradient(90deg,rgba(2,8,22,.82),rgba(2,8,22,.28) 55%,rgba(2,8,22,.12)),url("${terminal}")`}}>
+        <div className="shell heroGrid">
+          <div className="heroCopy">
+            <div className="heroMonogram"><span>JW</span><Plane size={30}/></div>
+            <p className="kicker"><Sparkles size={15}/> Premium SNA airport transportation</p>
+            <h1><span>JOHN WAYNE</span><em>AIRPORT LIMOUSINE</em></h1>
+            <p className="heroTagline">Premium service. Every time.</p>
+            <p className="lead">Private, prearranged transportation to and from John Wayne Airport (SNA) with professional chauffeurs, luxury sedans, SUVs and Sprinters serving Orange County and Southern California.</p>
+            <div className="actions"><a className="btn primary" href={BOOKING_URL} target="_blank" rel="noreferrer">Reserve your ride <ArrowUpRight size={18}/></a><a className="btn glass" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div>
+            <div className="trustRow"><span><CheckCircle2/>Luxury fleet</span><span><CheckCircle2/>Professional chauffeurs</span><span><CheckCircle2/>24/7 reservations</span></div>
+          </div>
+          <div className="flightCard"><p>JOHN WAYNE AIRPORT</p><div className="iata">SNA</div><h3>Arrive relaxed.<br/>Leave on schedule.</h3><div className="mini"><Plane/><span>Terminals A · B · C</span></div><div className="mini"><MapPin/><span>18601 Airport Way, Santa Ana</span></div></div>
+        </div>
+      </section>
       <section className="intro shell" id="service"><div><p className="eyebrow">Built around SNA</p><h2>The airport ride should be the easiest part of your trip.</h2></div><p>John Wayne Airport is compact, convenient and central to Orange County. Our service is designed around that advantage: precise pickup timing, direct terminal service, luggage-ready vehicles and a reservation team that understands local traffic patterns, airport access and the destinations travelers use most.</p></section>
       <section className="featureBand"><div className="shell featureGrid"><article><Clock3/><h3>Flight-aware timing</h3><p>Pickup planning based on your flight, terminal and desired arrival window.</p></article><article><Luggage/><h3>Space for your trip</h3><p>Sedans, SUVs and Sprinters matched to passengers, luggage and equipment.</p></article><article><ShieldCheck/><h3>Professional chauffeurs</h3><p>Private, reserved transportation instead of waiting for an on-demand ride.</p></article></div></section>
       <section className="photoSplit shell"><div className="photo" style={{backgroundImage:`url("${interior}")`}}></div><div className="photoCopy"><p className="eyebrow">Inside John Wayne Airport</p><h2>A premium airport deserves a premium ground experience.</h2><p>John Wayne Airport continues to modernize its terminal experience while maintaining the compact layout Orange County travelers value. Our goal is to extend that smooth experience from the terminal curb to your final destination.</p><a href={BOOKING_URL} target="_blank" rel="noreferrer">Reserve airport transportation <ArrowRight size={16}/></a></div></section>
