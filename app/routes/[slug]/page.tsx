@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, ArrowUpRight, Car, CheckCircle2, Phone } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CheckCircle2, Phone, Plane } from "lucide-react";
 import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF, ROUTES, SITE_URL } from "../../site-data";
 
 export function generateStaticParams(){ return ROUTES.map(r=>({slug:r.slug})); }
@@ -11,7 +11,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   return { title:r.title, description:`${r.copy} Reserve private John Wayne Airport (SNA) limousine, SUV and black car service.`, alternates:{canonical:`/routes/${slug}`} };
 }
 
-function Brand(){return <Link href="/" className="brand legacyBrand"><span className="legacyMark"><Car size={22}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
 
 export default async function RoutePage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const r=ROUTES.find(x=>x.slug===slug); if(!r)notFound();

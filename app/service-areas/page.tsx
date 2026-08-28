@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, Car, Phone } from "lucide-react";
+import { ArrowRight, Phone, Plane } from "lucide-react";
 import { PHONE_DISPLAY, PHONE_HREF, ROUTES } from "../site-data";
 
 const orange = ROUTES.filter(r=>r.county==="Orange County");
 const la = ROUTES.filter(r=>r.county==="Los Angeles County");
 
-function Brand(){return <Link href="/" className="brand legacyBrand"><span className="legacyMark"><Car size={22}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
 
 export default function ServiceAreas(){
   return <>
