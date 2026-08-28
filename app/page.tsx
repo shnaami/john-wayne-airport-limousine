@@ -12,17 +12,9 @@ export default function Home() {
   return <>
     <header className="topbar"><div className="shell nav"><Brand/><nav><a href="#service">Airport Service</a><a href="#routes">Popular Routes</a><Link href="/service-areas">All Cities</Link><a href="#why">Why Us</a></nav><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></header>
     <main>
-      <section className="hero premiumHero" style={{backgroundImage:`url("/john-wayne-airport-hero.png")`}}>
+      <section className="hero premiumHero" style={{backgroundImage:`url("/john-wayne-airport-hero.png.png")`}}>
         <div className="shell heroGrid">
-          <div className="heroCopy">
-            <div className="heroMonogram"><span>JW</span><Plane size={30}/></div>
-            <p className="kicker"><Sparkles size={15}/> Premium SNA airport transportation</p>
-            <h1><span>JOHN WAYNE</span><em>AIRPORT LIMOUSINE</em></h1>
-            <p className="heroTagline">Premium service. Every time.</p>
-            <p className="lead">Private, prearranged transportation to and from John Wayne Airport (SNA) with professional chauffeurs, luxury sedans, SUVs and Sprinters serving Orange County and Southern California.</p>
-            <div className="actions"><a className="btn primary" href={BOOKING_URL} target="_blank" rel="noreferrer">Reserve your ride <ArrowUpRight size={18}/></a><a className="btn glass" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div>
-            <div className="trustRow"><span><CheckCircle2/>Luxury fleet</span><span><CheckCircle2/>Professional chauffeurs</span><span><CheckCircle2/>24/7 reservations</span></div>
-          </div>
+          <div className="heroCopy"><div className="heroMonogram"><span>JW</span><Plane size={30}/></div><p className="kicker"><Sparkles size={15}/> Premium SNA airport transportation</p><h1><span>JOHN WAYNE</span><em>AIRPORT LIMOUSINE</em></h1><p className="heroTagline">Premium service. Every time.</p><p className="lead">Private, prearranged transportation to and from John Wayne Airport (SNA) with professional chauffeurs, luxury sedans, SUVs and Sprinters serving Orange County and Southern California.</p><div className="actions"><a className="btn primary" href={BOOKING_URL} target="_blank" rel="noreferrer">Reserve your ride <ArrowUpRight size={18}/></a><a className="btn glass" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div><div className="trustRow"><span><CheckCircle2/>Luxury fleet</span><span><CheckCircle2/>Professional chauffeurs</span><span><CheckCircle2/>24/7 reservations</span></div></div>
           <div className="flightCard"><p>JOHN WAYNE AIRPORT</p><div className="iata">SNA</div><h3>Arrive relaxed.<br/>Leave on schedule.</h3><div className="mini"><Plane/><span>Terminals A · B · C</span></div><div className="mini"><MapPin/><span>18601 Airport Way, Santa Ana</span></div></div>
         </div>
       </section>
