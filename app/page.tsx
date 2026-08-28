@@ -3,7 +3,6 @@ import { ArrowRight, ArrowUpRight, CheckCircle2, Clock3, Luggage, MapPin, Phone,
 import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF, POPULAR_ROUTE_SLUGS, ROUTES } from "./site-data";
 
 const interior = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_55_07_UTC_The_interior_of_the_terminal_at_John_Wayne_Airport_in_Orange_County%2C_California.jpg";
-const terminal = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-09_01_18_27_UTC_View_of_the_terminal_from_a_taxiing_aircraft_at_John_Wayne_Airport_in_Orange_County%2C_California.jpg";
 const aircraft = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_56_23_UTC_A_United_Airlines_Boeing_737_at_John_Wayne_Orange_County_Airport_in_Orange_County%2C_California.jpg";
 const popularRoutes = POPULAR_ROUTE_SLUGS.map(slug=>ROUTES.find(r=>r.slug===slug)!).filter(Boolean);
 
@@ -13,7 +12,7 @@ export default function Home() {
   return <>
     <header className="topbar"><div className="shell nav"><Brand/><nav><a href="#service">Airport Service</a><a href="#routes">Popular Routes</a><Link href="/service-areas">All Cities</Link><a href="#why">Why Us</a></nav><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></header>
     <main>
-      <section className="hero premiumHero" style={{backgroundImage:`linear-gradient(180deg,rgba(4,14,40,.12),rgba(4,14,40,.36) 52%,rgba(2,8,22,.88)),linear-gradient(90deg,rgba(2,8,22,.82),rgba(2,8,22,.28) 55%,rgba(2,8,22,.12)),url("${terminal}")`}}>
+      <section className="hero premiumHero" style={{backgroundImage:`url("/john-wayne-airport-hero.png")`}}>
         <div className="shell heroGrid">
           <div className="heroCopy">
             <div className="heroMonogram"><span>JW</span><Plane size={30}/></div>
