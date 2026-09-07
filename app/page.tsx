@@ -1,7 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Clock3, Luggage, Phone, Plane, ShieldCheck } from "lucide-react";
 import { BOOKING_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF, POPULAR_ROUTE_SLUGS, ROUTES } from "./site-data";
 import MobileMenu from "./mobile-menu";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const interior = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_55_07_UTC_The_interior_of_the_terminal_at_John_Wayne_Airport_in_Orange_County%2C_California.jpg";
 const aircraft = "https://commons.wikimedia.org/wiki/Special:Redirect/file/2025-08-08_23_56_23_UTC_A_United_Airlines_Boeing_737_at_John_Wayne_Orange_County_Airport_in_Orange_County%2C_California.jpg";
