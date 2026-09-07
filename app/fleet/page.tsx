@@ -4,8 +4,8 @@ import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF } from "../site-data";
 import MobileMenu from "../mobile-menu";
 
 export const metadata = {
-  title: "Luxury Fleet | John Wayne Airport Limousine SNA",
-  description: "Explore the John Wayne Airport Limousine fleet: Lincoln Aviator, Cadillac Escalade, Mercedes-Benz Sprinter Limousine and 20-passenger limousine bus for SNA and Orange County.",
+  title: { absolute: "Luxury Fleet | John Wayne Airport Limousine" },
+  description: "Explore luxury SUVs, Mercedes-Benz Sprinter limousines and group vehicles for John Wayne Airport and Orange County transportation.",
   alternates: { canonical: "https://johnwayneairportlimousine.com/fleet" }
 };
 
