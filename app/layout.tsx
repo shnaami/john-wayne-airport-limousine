@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     "John Wayne Airport chauffeur",
     "SNA private transportation"
   ],
-  alternates: { canonical: "/" },
   robots: { index: true, follow: true }
 };
 
