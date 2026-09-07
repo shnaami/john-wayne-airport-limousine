@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Phone, Plane } from "lucide-react";
 import { PHONE_DISPLAY, PHONE_HREF, ROUTES } from "../site-data";
 import MobileMenu from "../mobile-menu";
+
+export const metadata: Metadata = {
+  title: { absolute: "John Wayne Airport Limousine Service Areas" },
+  description: "Browse direct John Wayne Airport limousine and private car service routes across Orange County and Los Angeles County.",
+  alternates: { canonical: "/service-areas" }
+};
 
 const orange = ROUTES.filter(r=>r.county==="Orange County");
 const la = ROUTES.filter(r=>r.county==="Los Angeles County");
