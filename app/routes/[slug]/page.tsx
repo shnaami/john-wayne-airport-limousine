@@ -9,7 +9,7 @@ export function generateStaticParams(){ return ROUTES.map(r=>({slug:r.slug})); }
 
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
   const {slug}=await params; const r=ROUTES.find(x=>x.slug===slug); if(!r)return{};
-  return { title:r.title, description:`${r.copy} Reserve private John Wayne Airport (SNA) limousine, SUV and black car service.`, alternates:{canonical:`/routes/${slug}`} };
+  return { title:{absolute:r.title}, description:`Private John Wayne Airport car service between SNA and ${r.city}. Reserved SUVs, limousines and group transportation.`, alternates:{canonical:`/routes/${slug}`} };
 }
 
 function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
