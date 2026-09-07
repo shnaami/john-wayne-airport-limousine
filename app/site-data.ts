@@ -25,6 +25,8 @@ const specialCopy: Record<string,string> = {
   "San Clemente":"Comfortable airport transportation south to San Clemente for homes, hotels, events and coastal travel.",
   "Costa Mesa":"Fast, prearranged airport transportation to South Coast Plaza, Segerstrom Center, hotels and businesses.",
   "Tustin":"Private airport transportation from SNA to Tustin residences, offices, hotels and nearby destinations.",
+  "Laguna Hills":"Direct John Wayne Airport transportation to Laguna Hills homes, hotels, medical centers and business destinations.",
+  "San Juan Capistrano":"Private SNA car service to San Juan Capistrano residences, hotels, wedding venues and historic downtown destinations.",
   "Long Beach":"Private John Wayne Airport transportation to Long Beach hotels, downtown, the waterfront, cruise terminals and Long Beach Airport connections.",
   "Los Angeles":"Reserved SNA car service to Los Angeles hotels, business districts, residences, studios and event destinations.",
   "Beverly Hills":"Private airport transportation from SNA to Beverly Hills hotels, residences, shopping and business appointments.",
@@ -47,4 +49,4 @@ export const ROUTES: Route[] = [
   ...losAngelesCounty.map(city=>buildRoute(city,"Los Angeles County"))
 ];
 
-export const POPULAR_ROUTE_SLUGS = ["newport-beach","irvine","laguna-beach","anaheim","mission-viejo","laguna-niguel","dana-point","san-clemente","costa-mesa","tustin","long-beach","los-angeles"];
+export const POPULAR_ROUTE_SLUGS = ["dana-point","newport-beach","irvine","laguna-beach","anaheim","laguna-niguel","san-clemente","mission-viejo","costa-mesa","tustin","laguna-hills","san-juan-capistrano"];
