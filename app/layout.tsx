@@ -25,6 +25,28 @@ export const metadata: Metadata = {
     "SNA to Dana Point car service",
     "SNA private transportation"
   ],
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "John Wayne Airport Limousine",
+    title: "John Wayne Airport Limousine & Car Service | SNA Transportation",
+    description: "Private SNA airport car, limousine and chauffeur service to Newport Beach, Laguna Beach, Irvine, Anaheim, Mission Viejo and Orange County.",
+    images: [
+      {
+        url: "/john-wayne-airport-master.jpg",
+        alt: "John Wayne Airport Limousine and SNA private car service"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "John Wayne Airport Limousine & Car Service | SNA Transportation",
+    description: "Private SNA airport car, limousine and chauffeur service throughout Orange County.",
+    images: ["/john-wayne-airport-master.jpg"]
+  },
   robots: {
     index: true,
     follow: true,
