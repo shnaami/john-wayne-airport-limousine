@@ -14,7 +14,6 @@ const nextConfig: NextConfig = {
       { source: "/John-Wayne-Airport-Limousine-Gallery.html", destination: "/fleet", permanent: true },
       { source: "/Contact-John-Wayne-Airport-Limousine.html", destination: "/", permanent: true },
       { source: "/about-John-Wayne-Airport-Limousine.html", destination: "/", permanent: true },
-      { source: "/Airport-Limousine-:city-California.html", destination: "/service-areas", permanent: true },
     ];
   },
 };
