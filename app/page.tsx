@@ -5,7 +5,7 @@ import { BOOKING_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF, POPULAR_ROUTE_SLUGS, ROU
 import MobileMenu from "./mobile-menu";
 
 export const metadata: Metadata = {
-  title: "John Wayne Airport Limousine & Car Service | SNA Transportation",
+  title: { absolute: "John Wayne Airport Limousine & Car Service | SNA Transportation" },
   description: "John Wayne Airport limousine and private car service for SNA arrivals and departures, including black SUVs, professional chauffeurs and direct transportation throughout Orange County.",
   alternates: { canonical: "/" }
 };

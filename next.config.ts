@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/John-Wayne-Airport-Limousine.html", destination: "/", permanent: true },
-      { source: "/Orange-County-Limousine.html", destination: "/", permanent: true },
+      { source: "/Orange-County-Limousine.html", destination: "/service-areas", permanent: true },
       { source: "/John-Wayne-Airport-Limousine-Gallery.html", destination: "/fleet", permanent: true },
       { source: "/Contact-John-Wayne-Airport-Limousine.html", destination: "/", permanent: true },
       { source: "/about-John-Wayne-Airport-Limousine.html", destination: "/", permanent: true },

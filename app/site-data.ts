@@ -15,6 +15,7 @@ const losAngelesCounty = [
 const slugify = (city:string) => city.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
 
 const specialCopy: Record<string,string> = {
+  "Avalon":"Private SNA ground transportation to mainland ferry terminals for onward travel to Avalon on Catalina Island. Ferry travel is booked separately.",
   "Newport Beach":"Private SNA airport transportation to Newport Beach, Newport Coast, Balboa, Fashion Island and area hotels.",
   "Irvine":"Executive and private airport transportation between SNA and Irvine offices, hotels, UC Irvine and residential neighborhoods.",
   "Laguna Beach":"Prearranged SNA transfers to Laguna Beach resorts, downtown, residences, weddings and coastal destinations.",
@@ -41,7 +42,7 @@ function buildRoute(city:string, county:Route["county"]):Route {
   const copy = specialCopy[city] || (county === "Orange County"
     ? `Private John Wayne Airport transportation between SNA and ${city} for homes, hotels, business travel, events and local destinations.`
     : `Prearranged John Wayne Airport car service between SNA and ${city}, with private chauffeured transportation for business and leisure travel.`);
-  return { slug:slugify(city), city, county, title:`John Wayne Airport to ${city} Car Service`, copy };
+  return { slug:slugify(city), city, county, title:city==="Avalon" ? "SNA to Catalina Island Ferry Terminal Car Service" : `John Wayne Airport to ${city} Car Service`, copy };
 }
 
 export const ROUTES: Route[] = [
