@@ -17,7 +17,7 @@ function Brand(){return <Link href="/" className="brand premiumBrand"><span clas
 
 export default function ServiceAreas(){
   return <>
-    <header className="topbar"><div className="shell nav"><Brand/><nav><Link href="/">Airport Service</Link><Link href="/fleet">Fleet</Link><Link href="/service-areas">All Cities</Link><Link href="/#why">Why Us</Link></nav><div className="headerActions"><MobileMenu/><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></div></header>
+    <header className="topbar"><div className="shell nav"><Brand/><nav><Link href="/">Airport Service</Link><Link href="/private-aviation">Private Aviation</Link><Link href="/fleet">Fleet</Link><Link href="/service-areas">All Cities</Link><Link href="/#why">Why Us</Link></nav><div className="headerActions"><MobileMenu/><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></div></header>
     <main>
       <section className="routeHero"><div className="shell"><p className="kicker">SNA SERVICE AREA DIRECTORY</p><h1>John Wayne Airport limousine service areas</h1><p className="lead">Find private John Wayne Airport transportation for your home, hotel, office or meeting. Choose a destination below for route planning, then request a quote with your flight details, passenger count and luggage. Avalon trips require a separate ferry crossing from a mainland terminal.</p></div></section>
       <section className="directory shell">

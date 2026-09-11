@@ -23,11 +23,11 @@ export function middleware(req:NextRequest){
 
   const legacyMap:Record<string,string> = {
     "/index.html":"/",
-    "/long-beach-airport-limousine.html":"/routes/long-beach",
+    "/long-beach-airport-limousine.html":"/airport-transfers/sna-to-long-beach-airport",
     "/john-wayne-airport-limousine.html":"/",
     "/orange-county-limousine.html":"/service-areas",
     "/los-angeles-limousine.html":"/service-areas",
-    "/lax-airport-limousine.html":"/routes/los-angeles",
+    "/lax-airport-limousine.html":"/airport-transfers/sna-to-lax",
     "/san-diego-limousine.html":"/service-areas",
     "/contact-john-wayne-airport-limousine.html":"/",
     "/john-wayne-airport-limousine-gallery.html":"/fleet",

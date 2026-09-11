@@ -39,6 +39,8 @@ export default function MobileMenu() {
             <nav className="mobileMenuPrimary">
               <Link href="/" onClick={close}>Home</Link>
               <Link href="/#service" onClick={close}>Airport Service</Link>
+              <Link href="/private-aviation" onClick={close}>Private Aviation</Link>
+              <Link href="/sna-airport-pickup" onClick={close}>SNA Pickup Guide</Link>
               <Link href="/fleet" onClick={close}>Luxury Fleet</Link>
               <Link href="/#routes" onClick={close}>Popular Routes</Link>
               <Link href="/service-areas" onClick={close}>All Cities</Link>
