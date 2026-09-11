@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Clock3, Luggage, Phone, Plane, ShieldCheck } from "lucide-react";
 import { BOOKING_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF, POPULAR_ROUTE_SLUGS, ROUTES } from "./site-data";
 import MobileMenu from "./mobile-menu";
 
 export const metadata: Metadata = {
-  title: { absolute: "John Wayne Airport Limousine & Car Service | SNA Transportation" },
-  description: "John Wayne Airport limousine and private car service for SNA arrivals and departures, including black SUVs, professional chauffeurs and direct transportation throughout Orange County.",
+  title: { absolute: "John Wayne Airport Limousine | SNA Car Service" },
+  description: "Private John Wayne Airport (SNA) limousine and car service with professional chauffeurs, black SUVs and direct Orange County airport transfers.",
   alternates: { canonical: "/" }
 };
 

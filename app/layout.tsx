@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from "./analytics";
-import { SITE_URL } from "./site-data";
+import { LOCAL_BUSINESS_SCHEMA, SITE_URL, WEBSITE_ID } from "./site-data";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "John Wayne Airport Car Service & Limo | SNA Black Car Transportation",
+    default: "John Wayne Airport Limousine | SNA Car Service",
     template: "%s | John Wayne Airport Limousine"
   },
-  description: "John Wayne Airport car service, limo, black car and private chauffeur transportation from SNA to Newport Beach, Laguna Beach, Irvine, Anaheim, Mission Viejo, Dana Point and Orange County.",
+  description: "John Wayne Airport limousine and private car service for SNA arrivals and departures, with black SUVs and professional chauffeurs across Orange County.",
   keywords: [
     "John Wayne Airport car service",
     "John Wayne Airport limo service",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/"
+  },
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
   },
   openGraph: {
     type: "website",
@@ -60,6 +64,21 @@ export const metadata: Metadata = {
   }
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    LOCAL_BUSINESS_SCHEMA,
+    {
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
+      name: "John Wayne Airport Limousine",
+      url: SITE_URL,
+      publisher: { "@id": LOCAL_BUSINESS_SCHEMA["@id"] },
+      inLanguage: "en-US",
+    },
+  ],
+};
+
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="en"><body>{children}<GoogleAnalytics/></body></html>;
+  return <html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationSchema).replace(/</g,"\\u003c")}}/><GoogleAnalytics/></body></html>;
 }

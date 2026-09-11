@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight, CheckCircle2, Phone, Plane } from "lucide-react";
-import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF, ROUTES, SITE_URL } from "../../site-data";
+import { BOOKING_URL, BUSINESS_ID, PHONE_DISPLAY, PHONE_HREF, ROUTES, SITE_URL } from "../../site-data";
 import MobileMenu from "../../mobile-menu";
 
 export function generateStaticParams(){ return ROUTES.map(r=>({slug:r.slug})); }
@@ -62,7 +62,7 @@ export default async function RoutePage({params}:{params:Promise<{slug:string}>}
   const detail=ROUTE_DETAILS[slug];
   const neighbors:Record<string,string[]>={"anaheim":["orange","buena-park","garden-grove","irvine"],"irvine":["newport-beach","tustin","costa-mesa","orange"],"newport-beach":["costa-mesa","irvine","laguna-beach","dana-point"],"laguna-beach":["newport-beach","dana-point","laguna-niguel"],"dana-point":["san-clemente","laguna-beach","san-juan-capistrano"],"san-clemente":["dana-point","san-juan-capistrano","mission-viejo"],"orange":["anaheim","tustin","irvine"],"avalon":["dana-point","long-beach","newport-beach"]};
   const related=(neighbors[slug] || ROUTES.filter(x=>x.slug!==slug && x.county===r.county).map(x=>x.slug).slice(0,6)).map(key=>ROUTES.find(x=>x.slug===key)!).filter(Boolean);
-  const schema={"@context":"https://schema.org","@type":"Service",name:r.title,url:`${SITE_URL}/routes/${slug}`,areaServed:[r.city,r.county],serviceType:"John Wayne Airport private car and limousine service",provider:{"@type":"LocalBusiness",name:"John Wayne Airport Limousine",telephone:"+1-949-680-5466"}};
+  const schema={"@context":"https://schema.org","@type":"Service",name:r.title,url:`${SITE_URL}/routes/${slug}`,areaServed:[r.city,r.county],serviceType:"John Wayne Airport private car and limousine service",provider:{"@id":BUSINESS_ID}};
   return <>
     <header className="topbar"><div className="shell nav"><Brand/><nav><Link href="/">Airport Service</Link><Link href="/private-aviation">Private Aviation</Link><Link href="/fleet">Fleet</Link><Link href="/service-areas">All Cities</Link><Link href="/#why">Why Us</Link></nav><div className="headerActions"><MobileMenu/><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></div></header>
     <main>

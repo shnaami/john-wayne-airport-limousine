@@ -4,6 +4,53 @@ export const PHONE_HREF = "tel:+19496805466";
 export const EMAIL = "info@johnwayneairportlimousine.com";
 export const BOOKING_URL = "https://book.mylimobiz.com/v4/scltinc";
 
+export const BUSINESS_ID = `${SITE_URL}/#business`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+export const LOCAL_BUSINESS_SCHEMA = {
+  "@type": "LocalBusiness",
+  "@id": BUSINESS_ID,
+  name: "John Wayne Airport Limousine",
+  legalName: "South Coast Limousines & Transportations, Inc.",
+  url: SITE_URL,
+  telephone: "+1-949-680-5466",
+  email: EMAIL,
+  image: `${SITE_URL}/john-wayne-airport-master.jpg`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Mission Viejo",
+    addressRegion: "CA",
+    postalCode: "92692",
+    addressCountry: "US",
+  },
+  areaServed: [
+    "Orange County",
+    "Newport Beach",
+    "Irvine",
+    "Anaheim",
+    "Laguna Beach",
+    "Dana Point",
+    "Mission Viejo",
+    "San Clemente",
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "06:00",
+      closes: "22:00",
+    },
+  ],
+};
+
 const orangeCounty = [
   "Aliso Viejo","Anaheim","Brea","Buena Park","Costa Mesa","Cypress","Dana Point","Fountain Valley","Fullerton","Garden Grove","Huntington Beach","Irvine","La Habra","La Palma","Laguna Beach","Laguna Hills","Laguna Niguel","Newport Beach","Orange","Placentia","Rancho Santa Margarita","San Clemente","San Juan Capistrano","Santa Ana","Seal Beach","Stanton","Tustin","Villa Park","Westminster","Yorba Linda","Laguna Woods","Lake Forest","Los Alamitos","Mission Viejo"
 ] as const;
