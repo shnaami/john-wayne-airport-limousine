@@ -48,6 +48,36 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "When booking transportation to Orange, provide a full street address so your reservation identifies the City of Orange rather than the wider Orange County area. Trips to Old Towne, Chapman University, a hotel or a medical appointment can require different drop-off entrances. For campus visits, include the building or visitor meeting point and a contact number. Tell us if an appointment requires a specific arrival time.",
     "returnCopy": "For Orange to John Wayne Airport departures, provide the flight number, departure time and pickup entrance. If several passengers are meeting at different addresses, request a multi-stop itinerary when booking. For a medical appointment, discuss any mobility or vehicle requirements with reservations before confirming; a standard airport transfer should not be assumed to include medical transport assistance."
   },
+  "mission-viejo": {
+    "heading": "SNA transfers for Mission Viejo homes, hotels and business travel",
+    "copy": "For Mission Viejo arrivals, provide the exact residential, hotel or business address and any gate or visitor-entry instructions. If the trip includes a medical office, meeting or second pickup, identify the correct entrance and requested arrival time. Families should list strollers, child-seat requests and luggage before the vehicle is confirmed.",
+    "returnCopy": "For Mission Viejo to John Wayne Airport departures, share the airline, flight time and pickup address when requesting a recommended schedule. Add time for loading and any gated-community access, and arrange intermediate stops before the reservation is confirmed."
+  },
+  "laguna-niguel": {
+    "heading": "John Wayne Airport transfers for Laguna Niguel residences and coastal stays",
+    "copy": "Laguna Niguel trips often involve gated residences, hillside neighborhoods or hotels near the coast. Give the complete address, gate instructions and a working passenger mobile number. If your party is continuing to a Dana Point or Laguna Beach event, include that stop in the itinerary rather than treating it as part of the original destination.",
+    "returnCopy": "For Laguna Niguel to SNA, provide your departure flight and exact pickup location. Tell reservations about golf bags, oversized luggage or multiple household pickups so the vehicle and schedule can be planned before travel."
+  },
+  "costa-mesa": {
+    "heading": "SNA car service for Costa Mesa hotels, offices and South Coast Metro",
+    "copy": "Costa Mesa is immediately adjacent to John Wayne Airport, but the correct destination still matters. Provide the hotel, office, South Coast Plaza-area address or event entrance instead of only the city name. For meetings near South Coast Metro, include the building and appointment time so the reservation reflects the actual stop.",
+    "returnCopy": "For Costa Mesa to SNA departures, share the airline and flight time along with the pickup entrance. A short drive does not remove the need to plan for loading, terminal access and airline check-in guidance. Add any office or hotel stop to the quote in advance."
+  },
+  "tustin": {
+    "heading": "Private SNA transportation for Tustin and Tustin Legacy",
+    "copy": "For Tustin airport transfers, identify the exact home, hotel, office or Tustin Legacy destination. Business parks and residential communities can have multiple entrances, so include a building name, suite, gate instruction or passenger contact when useful. List all luggage and requested stops before confirming the vehicle.",
+    "returnCopy": "For Tustin to John Wayne Airport, provide the departure flight and the address where the chauffeur should meet your party. If passengers are being collected at more than one Tustin address, request a multi-stop itinerary so the schedule and quote account for each pickup."
+  },
+  "laguna-hills": {
+    "heading": "SNA transfers for Laguna Hills homes, hotels and appointments",
+    "copy": "Laguna Hills travelers should provide the complete destination and the correct passenger entrance, especially for hotels, office complexes and medical campuses. If a traveler has mobility-related needs, discuss the specific vehicle and assistance requirements with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
+    "returnCopy": "For Laguna Hills to SNA departures, share the flight information, pickup entrance, passenger count and luggage. Ask for a pickup recommendation that accounts for loading and airline check-in guidance, and arrange any additional stop before the trip."
+  },
+  "san-juan-capistrano": {
+    "heading": "John Wayne Airport car service for San Juan Capistrano",
+    "copy": "For San Juan Capistrano arrivals, provide the full address for the residence, hotel, wedding venue or historic-district destination. Event locations and private properties may use a specific guest entrance, so include those instructions with the reservation. Groups arriving on separate flights should identify each flight and whether they plan to travel together.",
+    "returnCopy": "For San Juan Capistrano to SNA, give the departure flight, exact pickup address and any gate or venue instructions. Tell reservations about luggage, golf equipment, child-seat requests and planned stops so the return vehicle and schedule match the trip."
+  },
   "avalon": {
     "heading": "SNA to a mainland ferry terminal for Avalon",
     "copy": "Avalon is on Catalina Island. Your ground transfer covers the mainland journey from John Wayne Airport to the ferry terminal you have booked; the ferry crossing is a separate part of the trip. Share the ferry operator, departure port, sailing time and check-in requirement before reserving the car. Do not use your Avalon hotel address as the mainland drop-off location.",
