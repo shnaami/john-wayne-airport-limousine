@@ -80,7 +80,17 @@ const specialCopy: Record<string,string> = {
   "Beverly Hills":"Private airport transportation from SNA to Beverly Hills hotels, residences, shopping and business appointments.",
   "Santa Monica":"Prearranged chauffeur service from John Wayne Airport to Santa Monica hotels, residences, offices and coastal destinations.",
   "Pasadena":"Private SNA airport transportation to Pasadena hotels, residences, meetings, events and the surrounding San Gabriel Valley.",
-  "Inglewood":"Reserved transportation from SNA to Inglewood hotels, residences, events and nearby entertainment venues."
+  "Inglewood":"Reserved transportation from SNA to Inglewood hotels, residences, events and nearby entertainment venues.",
+  "Huntington Beach":"Private SNA airport transportation to Huntington Beach hotels, residences, waterfront destinations and events.",
+  "Santa Ana":"Prearranged John Wayne Airport car service to Santa Ana offices, hotels, residences, appointments and events.",
+  "Garden Grove":"Private SNA transportation to Garden Grove hotels, residences and Anaheim Resort-area destinations.",
+  "Lake Forest":"Door-to-door John Wayne Airport transportation for Lake Forest homes, hotels, offices and business travel.",
+  "Aliso Viejo":"Private SNA car service to Aliso Viejo residences, hotels, offices and local destinations.",
+  "Rancho Santa Margarita":"Reserved John Wayne Airport transportation to Rancho Santa Margarita homes, businesses and local destinations.",
+  "Fullerton":"Private SNA airport transportation to Fullerton hotels, residences, campuses, downtown and business destinations.",
+  "Buena Park":"Prearranged John Wayne Airport car service to Buena Park hotels, attractions, residences and events.",
+  "Fountain Valley":"Private SNA transportation to Fountain Valley homes, hotels, offices and appointment destinations.",
+  "Yorba Linda":"Reserved John Wayne Airport transportation to Yorba Linda residences, events, hotels and business destinations."
 };
 
 export type Route = { slug:string; city:string; county:"Orange County"|"Los Angeles County"; title:string; copy:string };
