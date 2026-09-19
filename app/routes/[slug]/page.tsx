@@ -158,6 +158,46 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Yorba Linda arrivals, provide the exact residence, hotel, event or business address and any gate instructions. Groups and families should list passenger count, luggage and oversized items before the vehicle is confirmed. Event transportation and airport transfers should be itemized separately when they involve different schedules.",
     "returnCopy": "For Yorba Linda to SNA, share the airline, flight time and pickup address. If passengers are collected from more than one location, request a multi-stop itinerary so the schedule and quote account for every pickup."
   },
+  "brea": {
+    "heading": "John Wayne Airport transportation for Brea",
+    "copy": "Brea airport trips may involve residences, hotels, offices, shopping or event destinations. Provide the complete street address and correct passenger entrance, and include the requested arrival time for meetings or events. Groups should list passengers, luggage and any oversized items before the vehicle is confirmed.",
+    "returnCopy": "For Brea to SNA, share the airline, departure time and exact pickup address. If passengers are being collected in Fullerton, Yorba Linda or another city, request those stops in advance so the schedule and quote include them."
+  },
+  "cypress": {
+    "heading": "Private SNA transportation for Cypress",
+    "copy": "For Cypress arrivals, identify the exact residence, hotel, office or event address and any gate or visitor-entry instructions. Business travelers should include appointment times, while families should provide passenger, luggage and child-seat request details before booking.",
+    "returnCopy": "For Cypress to John Wayne Airport, provide the departure flight and pickup location. Add any intermediate hotel, office or residential stop before the reservation is confirmed so the vehicle plan and quote match the itinerary."
+  },
+  "seal-beach": {
+    "heading": "SNA car service to Seal Beach homes and coastal destinations",
+    "copy": "Seal Beach transfers should include the exact residence, hotel, business or waterfront address. Tell reservations about beach equipment, golf bags or oversized luggage before the vehicle is selected. If the destination is within a gated community, include access instructions and a working passenger mobile number.",
+    "returnCopy": "For Seal Beach to SNA, share the flight details and precise pickup address. Request additional stops in advance and confirm the pickup recommendation against your airline’s check-in guidance."
+  },
+  "westminster": {
+    "heading": "John Wayne Airport car service for Westminster",
+    "copy": "For Westminster arrivals, provide the full home, hotel, office, restaurant or event address and the correct passenger entrance. If several travelers are meeting from different locations, list each pickup as part of the itinerary rather than adding it during the trip.",
+    "returnCopy": "For Westminster to SNA, provide the airline, departure time, passenger count and luggage. Ask for a pickup recommendation based on the complete itinerary and confirm any additional stop before travel."
+  },
+  "los-alamitos": {
+    "heading": "Private SNA transportation for Los Alamitos",
+    "copy": "Los Alamitos airport transfers should be reserved to a complete residence, hotel, office or appointment address. Include building, gate or visitor-entry instructions when useful, and identify any required arrival time. Passenger and luggage details help determine the appropriate vehicle.",
+    "returnCopy": "For Los Alamitos to John Wayne Airport, share the flight time and exact pickup entrance. If the itinerary includes another pickup in Seal Beach, Cypress or a nearby city, arrange it as a multi-stop reservation in advance."
+  },
+  "la-habra": {
+    "heading": "John Wayne Airport transportation to La Habra",
+    "copy": "For La Habra arrivals, provide the exact residential, hotel, business or event address and any gated-access instructions. Groups should identify all passengers, luggage and requested stops before the reservation is confirmed, especially when travelers are arriving on different flights.",
+    "returnCopy": "For La Habra to SNA, provide the departure flight and pickup location. Multiple household pickups should be included in the quote request so the recommended schedule accounts for each stop."
+  },
+  "placentia": {
+    "heading": "SNA car service for Placentia",
+    "copy": "Placentia airport transportation should be booked to the exact residence, hotel, office or event address. Include gate instructions, building names and requested arrival times when applicable. Families and groups should provide luggage and oversized-item details before selecting a vehicle.",
+    "returnCopy": "For Placentia to John Wayne Airport, share the airline, flight time and pickup address. If the trip includes a pickup in Yorba Linda, Fullerton or Anaheim, request that stop before confirmation."
+  },
+  "laguna-woods": {
+    "heading": "Private John Wayne Airport transportation for Laguna Woods",
+    "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
+    "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
+  },
   "avalon": {
     "heading": "SNA to a mainland ferry terminal for Avalon",
     "copy": "Avalon is on Catalina Island. Your ground transfer covers the mainland journey from John Wayne Airport to the ferry terminal you have booked; the ferry crossing is a separate part of the trip. Share the ferry operator, departure port, sailing time and check-in requirement before reserving the car. Do not use your Avalon hotel address as the mainland drop-off location.",

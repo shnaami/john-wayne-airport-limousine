@@ -90,7 +90,15 @@ const specialCopy: Record<string,string> = {
   "Fullerton":"Private SNA airport transportation to Fullerton hotels, residences, campuses, downtown and business destinations.",
   "Buena Park":"Prearranged John Wayne Airport car service to Buena Park hotels, attractions, residences and events.",
   "Fountain Valley":"Private SNA transportation to Fountain Valley homes, hotels, offices and appointment destinations.",
-  "Yorba Linda":"Reserved John Wayne Airport transportation to Yorba Linda residences, events, hotels and business destinations."
+  "Yorba Linda":"Reserved John Wayne Airport transportation to Yorba Linda residences, events, hotels and business destinations.",
+  "Brea":"Private SNA airport transportation to Brea residences, hotels, offices, shopping and event destinations.",
+  "Cypress":"Prearranged John Wayne Airport car service to Cypress homes, hotels, offices and events.",
+  "Seal Beach":"Private SNA transportation to Seal Beach residences, hotels, waterfront destinations and local businesses.",
+  "Westminster":"Reserved John Wayne Airport transportation to Westminster homes, hotels, offices, dining and events.",
+  "Los Alamitos":"Private SNA car service to Los Alamitos residences, hotels, offices and appointment destinations.",
+  "La Habra":"Prearranged John Wayne Airport transportation to La Habra homes, hotels, businesses and events.",
+  "Placentia":"Private SNA airport transportation to Placentia residences, hotels, offices and event destinations.",
+  "Laguna Woods":"Reserved John Wayne Airport transportation to Laguna Woods residences and local destinations."
 };
 
 export type Route = { slug:string; city:string; county:"Orange County"|"Los Angeles County"; title:string; copy:string };
