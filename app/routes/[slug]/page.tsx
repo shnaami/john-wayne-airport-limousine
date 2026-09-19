@@ -78,6 +78,36 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For San Juan Capistrano arrivals, provide the full address for the residence, hotel, wedding venue or historic-district destination. Event locations and private properties may use a specific guest entrance, so include those instructions with the reservation. Groups arriving on separate flights should identify each flight and whether they plan to travel together.",
     "returnCopy": "For San Juan Capistrano to SNA, give the departure flight, exact pickup address and any gate or venue instructions. Tell reservations about luggage, golf equipment, child-seat requests and planned stops so the return vehicle and schedule match the trip."
   },
+  "long-beach": {
+    "heading": "SNA transfers to Long Beach hotels, waterfront and cruise travel",
+    "copy": "For a Long Beach city transfer, provide the exact hotel, residence, cruise-terminal or waterfront address. Long Beach Airport is a separate destination; if you are connecting to LGB, use the dedicated SNA-to-LGB airport transfer service and provide both flight itineraries. Cruise passengers should include their sailing information and terminal instructions.",
+    "returnCopy": "For Long Beach to John Wayne Airport, provide the departure flight and the precise pickup location. If your trip begins at a cruise terminal, allow for disembarkation and baggage collection before the reserved pickup window, and confirm how waiting is handled."
+  },
+  "los-angeles": {
+    "heading": "John Wayne Airport car service to Los Angeles",
+    "copy": "Los Angeles trips should be booked to a complete street address, hotel, studio, office or event entrance rather than only the city name. Travel conditions can vary significantly by neighborhood and time of day, so include appointment times and requested stops when asking for a quote. If the destination is LAX, use the dedicated SNA-to-LAX airport transfer itinerary instead.",
+    "returnCopy": "For Los Angeles to SNA departures, share the airline, flight time, pickup address and any scheduled stop. Ask for a pickup recommendation based on the actual itinerary and allow for loading, traffic and the airline’s check-in guidance."
+  },
+  "beverly-hills": {
+    "heading": "Private SNA transportation for Beverly Hills hotels and residences",
+    "copy": "For Beverly Hills arrivals, identify the hotel, residence, office or appointment entrance and provide any valet or gated-access instructions. If the day includes shopping, dining or business stops before the final destination, list them when requesting the quote so the reservation reflects the complete itinerary.",
+    "returnCopy": "For Beverly Hills to John Wayne Airport, provide your departure flight and exact pickup entrance. Multiple hotel or residential pickups should be arranged as a multi-stop reservation, with passenger and luggage counts confirmed before the vehicle is assigned."
+  },
+  "santa-monica": {
+    "heading": "SNA car service to Santa Monica hotels, offices and coastal destinations",
+    "copy": "Santa Monica transfers may end at a beachfront hotel, residence, office or meeting near downtown. Give the full street address and correct passenger entrance, and include oversized luggage or equipment in the reservation. If your itinerary continues elsewhere in Los Angeles, request the additional stop rather than relying on a general city destination.",
+    "returnCopy": "For Santa Monica to SNA, provide the flight time, airline and pickup address. The reservation should allow for loading, variable road conditions and airline check-in guidance. Confirm waiting and additional-stop terms before travel."
+  },
+  "pasadena": {
+    "heading": "John Wayne Airport transportation for Pasadena business and event travel",
+    "copy": "For Pasadena arrivals, provide the exact hotel, residence, office, campus or event entrance. Large venues and institutional properties can have multiple access points, so include the building or meeting location when known. For a timed event or appointment, tell reservations the required arrival time.",
+    "returnCopy": "For Pasadena to SNA departures, share the airline, flight time, pickup entrance, passenger count and luggage. If several travelers are collected at different addresses, request a multi-stop itinerary so the pickup recommendation and quote include each stop."
+  },
+  "burbank": {
+    "heading": "SNA car service to Burbank studios, hotels and airport-area destinations",
+    "copy": "For Burbank city travel, identify the studio, hotel, residence or business address and any security or visitor-entry instructions. Hollywood Burbank Airport is a distinct destination; if the trip is an airport-to-airport connection, provide both flight itineraries and make clear that BUR is the destination.",
+    "returnCopy": "For Burbank to John Wayne Airport, provide the SNA departure flight and exact pickup address. Studio access, scheduled meetings and additional stops should be included when requesting the quote so the reservation reflects the full itinerary."
+  },
   "avalon": {
     "heading": "SNA to a mainland ferry terminal for Avalon",
     "copy": "Avalon is on Catalina Island. Your ground transfer covers the mainland journey from John Wayne Airport to the ferry terminal you have booked; the ferry crossing is a separate part of the trip. Share the ferry operator, departure port, sailing time and check-in requirement before reserving the car. Do not use your Avalon hotel address as the mainland drop-off location.",
