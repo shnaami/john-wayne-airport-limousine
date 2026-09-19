@@ -108,6 +108,56 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Burbank city travel, identify the studio, hotel, residence or business address and any security or visitor-entry instructions. Hollywood Burbank Airport is a distinct destination; if the trip is an airport-to-airport connection, provide both flight itineraries and make clear that BUR is the destination.",
     "returnCopy": "For Burbank to John Wayne Airport, provide the SNA departure flight and exact pickup address. Studio access, scheduled meetings and additional stops should be included when requesting the quote so the reservation reflects the full itinerary."
   },
+  "huntington-beach": {
+    "heading": "SNA transfers to Huntington Beach hotels, homes and the coast",
+    "copy": "For Huntington Beach arrivals, provide the exact hotel, residence or event address, especially for destinations near Pacific Coast Highway or the waterfront. Tell reservations about surfboards, golf bags and other oversized items before the vehicle is confirmed. For a wedding or group arrival, list each flight if passengers are not landing together.",
+    "returnCopy": "For Huntington Beach to SNA, share the airline, departure time and exact pickup entrance. Include any hotel, office or residential stop in advance so the quote and pickup plan reflect the complete trip."
+  },
+  "santa-ana": {
+    "heading": "John Wayne Airport transportation for Santa Ana",
+    "copy": "Santa Ana destinations can include downtown offices, hotels, residences, courthouses and event venues. Provide the full street address and correct entrance rather than relying on the city name. If the trip includes a scheduled appointment, include the required arrival time when requesting the reservation.",
+    "returnCopy": "For Santa Ana to SNA departures, provide the flight details, pickup entrance, passenger count and luggage. Arrange multiple pickups as a multi-stop itinerary and confirm the total quote before travel."
+  },
+  "garden-grove": {
+    "heading": "SNA car service to Garden Grove hotels and Anaheim Resort-area stays",
+    "copy": "Garden Grove airport trips frequently involve hotels along Harbor Boulevard and nearby convention or theme-park travel. Give the exact hotel and passenger entrance when booking. Families should list strollers, child-seat requests and luggage, while convention travelers should identify any meeting or event stop separately.",
+    "returnCopy": "For Garden Grove to John Wayne Airport, share the departure flight and hotel or residential pickup address. If the day includes an Anaheim stop before SNA, add it to the itinerary so the schedule and quote include that leg."
+  },
+  "lake-forest": {
+    "heading": "Private SNA transportation for Lake Forest",
+    "copy": "For Lake Forest arrivals, provide the complete home, hotel, office or business-park address and any gated-community instructions. If passengers are arriving on separate flights, identify each flight and whether the party will wait to travel together or use separate vehicles.",
+    "returnCopy": "For Lake Forest to SNA, provide the airline, departure time and pickup address. List luggage, child-seat requests and additional stops before confirming the vehicle and pickup recommendation."
+  },
+  "aliso-viejo": {
+    "heading": "John Wayne Airport car service for Aliso Viejo",
+    "copy": "Aliso Viejo transfers should include the exact residence, hotel, office or meeting address and any gate or visitor-entry instructions. For business travel, identify the building and appointment time; for families, include passenger and luggage details before the vehicle is assigned.",
+    "returnCopy": "For Aliso Viejo to SNA departures, share the flight information and exact pickup location. If another passenger is being collected in Laguna Niguel, Laguna Hills or another city, request that stop in advance."
+  },
+  "rancho-santa-margarita": {
+    "heading": "SNA transfers for Rancho Santa Margarita homes and business travel",
+    "copy": "For Rancho Santa Margarita arrivals, provide the full residential or business address and any gated-community access instructions. Tell reservations about large luggage, golf equipment or child-seat requests before choosing the vehicle. Multi-household pickups should be listed as separate stops.",
+    "returnCopy": "For Rancho Santa Margarita to John Wayne Airport, share the airline, flight time and pickup address when requesting a schedule. Allow for loading and community access, and confirm any intermediate stop before the reservation is finalized."
+  },
+  "fullerton": {
+    "heading": "John Wayne Airport transportation to Fullerton",
+    "copy": "Fullerton trips may involve hotels, residences, Cal State Fullerton-area destinations, downtown or business appointments. Provide the complete address and building or passenger entrance when known. For campus or event travel, include the requested arrival time and meeting location.",
+    "returnCopy": "For Fullerton to SNA, provide the departure flight, pickup address, passenger count and luggage. If several travelers are meeting at different addresses, request a multi-stop itinerary rather than assuming additional pickups are included."
+  },
+  "buena-park": {
+    "heading": "SNA car service to Buena Park hotels and attractions",
+    "copy": "For Buena Park arrivals, identify the exact hotel, residence, attraction or event entrance. Families should include strollers, child-seat requests and all luggage when requesting a vehicle. If the itinerary continues to Anaheim or another hotel, list that as an additional stop.",
+    "returnCopy": "For Buena Park to John Wayne Airport, share the flight time and pickup location. Ask for a pickup recommendation that accounts for loading and airline check-in guidance, and confirm any additional stop before travel."
+  },
+  "fountain-valley": {
+    "heading": "Private SNA transportation for Fountain Valley",
+    "copy": "Fountain Valley airport transfers should be reserved to a complete home, hotel, office or appointment address. For medical or business destinations, identify the correct entrance and required arrival time. Discuss any mobility-related vehicle requirements before booking rather than assuming a standard airport vehicle will meet them.",
+    "returnCopy": "For Fountain Valley to SNA, provide the departure flight, pickup entrance and luggage details. Multiple passenger pickups or appointment stops should be included in the quote request in advance."
+  },
+  "yorba-linda": {
+    "heading": "John Wayne Airport car service for Yorba Linda",
+    "copy": "For Yorba Linda arrivals, provide the exact residence, hotel, event or business address and any gate instructions. Groups and families should list passenger count, luggage and oversized items before the vehicle is confirmed. Event transportation and airport transfers should be itemized separately when they involve different schedules.",
+    "returnCopy": "For Yorba Linda to SNA, share the airline, flight time and pickup address. If passengers are collected from more than one location, request a multi-stop itinerary so the schedule and quote account for every pickup."
+  },
   "avalon": {
     "heading": "SNA to a mainland ferry terminal for Avalon",
     "copy": "Avalon is on Catalina Island. Your ground transfer covers the mainland journey from John Wayne Airport to the ferry terminal you have booked; the ferry crossing is a separate part of the trip. Share the ferry operator, departure port, sailing time and check-in requirement before reserving the car. Do not use your Avalon hotel address as the mainland drop-off location.",
