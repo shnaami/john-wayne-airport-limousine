@@ -17,7 +17,9 @@ export function middleware(req:NextRequest){
 
   const cityMatch = pathname.match(/^\/Airport-Limousine-(.+)-California\.html$/i);
   if(cityMatch){
-    const slug = cityMatch[1].replace(/_/g,"-").replace(/\s+/g,"-").toLowerCase();
+    const rawSlug = cityMatch[1].replace(/_/g,"-").replace(/\s+/g,"-").toLowerCase();
+    // Preserve legacy links using the common Laguna Niguel spelling variant.
+    const slug = rawSlug === "laguna-nigel" ? "laguna-niguel" : rawSlug;
     return redirectTo(`/routes/${slug}`);
   }
 
