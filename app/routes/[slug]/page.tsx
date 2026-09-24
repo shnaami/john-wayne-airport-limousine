@@ -43,6 +43,36 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "San Clemente travelers should identify the exact pickup or destination address, whether near the pier, downtown, Talega or another residential neighborhood. For beach trips, list surfboards and other oversized items before choosing a vehicle; passenger capacity alone does not establish luggage capacity. A group arriving on separate flights should provide each flight number and decide whether to travel together or reserve separate transfers.",
     "returnCopy": "For San Clemente to SNA departures, reserve around the flight’s departure time rather than choosing a pickup time based only on the drive. Your schedule also needs room for loading, traffic and airline check-in. Include gate instructions for residential pickups and request any additional stop in advance. Confirm the total quote and waiting terms before booking."
   },
+  "west-hollywood": {
+    "heading": "Private SNA car service to West Hollywood hotels and residences",
+    "copy": "West Hollywood airport transfers may involve hotels, residences, restaurants, offices or evening events. Provide the exact street address and passenger entrance when booking, especially for hotels or buildings with multiple access points. If the itinerary includes dinner, a meeting or another stop before the final destination, list it in advance so the reservation reflects the full trip.",
+    "returnCopy": "For West Hollywood to John Wayne Airport departures, share the flight time, airline, pickup address and passenger count. Request a pickup recommendation that accounts for the full drive, loading time and airline check-in guidance, and confirm any intermediate stop before travel."
+  },
+  "cerritos": {
+    "heading": "John Wayne Airport transportation for Cerritos business and private travel",
+    "copy": "Cerritos trips can include residences, hotels, offices, medical appointments, shopping or event destinations. Provide the complete address, building or passenger entrance and a working mobile number. Business travelers should include the required arrival time, while families should list luggage and child-seat requests before the vehicle is confirmed.",
+    "returnCopy": "For Cerritos to SNA, provide the departure flight, pickup address, passenger count and luggage. If another passenger is being collected in a nearby city, request the additional stop before confirmation so the quote and schedule account for the full itinerary."
+  },
+  "signal-hill": {
+    "heading": "Private John Wayne Airport transportation for Signal Hill",
+    "copy": "Signal Hill airport trips should be reserved to the exact residence, office, hotel or appointment address. Include building, gate or visitor-entry instructions when helpful. For business travel, share the required arrival time; for families or groups, provide all luggage and oversized-item details before selecting the vehicle.",
+    "returnCopy": "For Signal Hill to SNA departures, share the airline, flight time and exact pickup address. If the trip includes a stop in Long Beach or another nearby city, arrange it as part of the reservation so the pickup plan and quote include every stop."
+  },
+  "san-gabriel": {
+    "heading": "SNA car service to San Gabriel and the western San Gabriel Valley",
+    "copy": "San Gabriel airport transportation can be planned for homes, hotels, businesses, restaurants, events and private appointments. Provide the full destination address and any building or guest-entry instructions. If several travelers are arriving on different flights, include each flight and decide whether the party will wait to travel together or use separate transfers.",
+    "returnCopy": "For San Gabriel to John Wayne Airport, provide the departure flight, pickup location, passenger count and luggage. Multi-stop pickups should be listed in advance so the recommended schedule includes every address before the airport."
+  },
+  "manhattan-beach": {
+    "heading": "John Wayne Airport transportation to Manhattan Beach",
+    "copy": "Manhattan Beach arrivals may involve coastal hotels, residences, offices or private events. Share the precise street address and passenger entrance, and tell reservations about beach equipment, golf bags or oversized luggage before the vehicle is selected. If the trip continues to another South Bay destination, request that stop as part of the original itinerary.",
+    "returnCopy": "For Manhattan Beach to SNA, provide the airline, flight time and pickup address. Request a pickup recommendation that accounts for the longer airport transfer and airline check-in guidance, and confirm any intermediate stop before the reservation is finalized."
+  },
+  "la-verne": {
+    "heading": "Private SNA transportation for La Verne",
+    "copy": "La Verne airport trips can be arranged for residences, hotels, offices, campuses, events and private appointments. Provide the complete destination address, passenger count and luggage details. If the reservation involves a scheduled meeting or event, include the required arrival time so the airport transfer can be planned around the full itinerary.",
+    "returnCopy": "For La Verne to John Wayne Airport departures, share the flight details and exact pickup location. Add any additional passenger pickup or stop before confirmation so the recommended schedule and quote reflect the complete trip."
+  },
   "orange": {
     "heading": "John Wayne Airport transfers to the City of Orange",
     "copy": "When booking transportation to Orange, provide a full street address so your reservation identifies the City of Orange rather than the wider Orange County area. Trips to Old Towne, Chapman University, a hotel or a medical appointment can require different drop-off entrances. For campus visits, include the building or visitor meeting point and a contact number. Tell us if an appointment requires a specific arrival time.",
