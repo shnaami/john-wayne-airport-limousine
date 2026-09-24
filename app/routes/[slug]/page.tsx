@@ -43,6 +43,31 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "San Clemente travelers should identify the exact pickup or destination address, whether near the pier, downtown, Talega or another residential neighborhood. For beach trips, list surfboards and other oversized items before choosing a vehicle; passenger capacity alone does not establish luggage capacity. A group arriving on separate flights should provide each flight number and decide whether to travel together or reserve separate transfers.",
     "returnCopy": "For San Clemente to SNA departures, reserve around the flight’s departure time rather than choosing a pickup time based only on the drive. Your schedule also needs room for loading, traffic and airline check-in. Include gate instructions for residential pickups and request any additional stop in advance. Confirm the total quote and waiting terms before booking."
   },
+  "hermosa-beach": {
+    "heading": "Private SNA transportation to Hermosa Beach",
+    "copy": "Hermosa Beach airport transfers can be arranged for coastal residences, hotels, restaurants, offices and private events. Provide the exact street address and passenger entrance, and tell reservations about surfboards, beach equipment or oversized luggage before the vehicle is assigned. If the itinerary continues to another South Bay destination, include that stop when requesting pricing.",
+    "returnCopy": "For Hermosa Beach to John Wayne Airport, share the airline, departure time and exact pickup address. Request a pickup recommendation that accounts for loading, the longer airport transfer and airline check-in guidance, and confirm any additional stop before travel."
+  },
+  "san-fernando": {
+    "heading": "John Wayne Airport car service to San Fernando",
+    "copy": "San Fernando airport trips may involve residences, businesses, hotels, studios or private appointments. Provide the complete destination address, passenger count, luggage and any building or gate instructions. For scheduled meetings or events, include the required arrival time when requesting availability so the itinerary can be planned around the full trip.",
+    "returnCopy": "For San Fernando to SNA departures, share the flight details and precise pickup address. Because this is a longer airport transfer, request a pickup recommendation that accounts for loading, traffic and airline check-in guidance, and list any intermediate stop before the reservation is confirmed."
+  },
+  "san-dimas": {
+    "heading": "Private John Wayne Airport transportation for San Dimas",
+    "copy": "San Dimas transfers can be planned for homes, hotels, offices, campuses, events and private appointments. Provide the exact destination address, passenger count and luggage details. If the trip includes a business meeting or event, share the required arrival time and any additional stop before confirming the vehicle.",
+    "returnCopy": "For San Dimas to John Wayne Airport, provide the airline, flight time and pickup location. Request a pickup recommendation for the complete itinerary, including loading and airline check-in guidance, and arrange any additional passenger pickup in advance."
+  },
+  "walnut": {
+    "heading": "SNA car service for Walnut residences and business travel",
+    "copy": "Walnut airport transportation should be reserved to a complete residence, hotel, office, campus or event address. Include gate, building or visitor-entry instructions when applicable. Families and business travelers should provide passenger count, luggage and any required arrival time before the vehicle is confirmed.",
+    "returnCopy": "For Walnut to John Wayne Airport departures, share the flight information and exact pickup location. If another passenger is being collected in Diamond Bar, West Covina or a nearby city, request that stop before confirmation so the schedule and quote include every pickup."
+  },
+  "lancaster": {
+    "heading": "Private SNA transportation to Lancaster and the Antelope Valley",
+    "copy": "Lancaster is a longer-distance transfer from John Wayne Airport, so the reservation should include the exact home, hotel, business or event address, passenger count and luggage. For business or appointment travel, include the required arrival time. If the trip includes a stop elsewhere in Los Angeles County, list it when requesting pricing.",
+    "returnCopy": "For Lancaster to SNA, provide the airline, flight time and precise pickup address. Request a pickup recommendation that accounts for the longer drive, loading and airline check-in guidance, and confirm the full itinerary before travel."
+  },
   "west-hollywood": {
     "heading": "Private SNA car service to West Hollywood hotels and residences",
     "copy": "West Hollywood airport transfers may involve hotels, residences, restaurants, offices or evening events. Provide the exact street address and passenger entrance when booking, especially for hotels or buildings with multiple access points. If the itinerary includes dinner, a meeting or another stop before the final destination, list it in advance so the reservation reflects the full trip.",
