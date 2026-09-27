@@ -1,7 +1,7 @@
 import Script from "next/script";
 
 export function GoogleAnalytics() {
-  const id = process.env.NEXT_PUBLIC_GA_ID;
+  const id = "G-YBH7JWVX0E";
   if (!id) return null;
   return <>
     <Script src={`https://www.googletagmanager.com/gtag/js?id=${id}`} strategy="afterInteractive" />
