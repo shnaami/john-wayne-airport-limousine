@@ -253,6 +253,21 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "temple-city": {
+    "heading": "Private SNA car service for Temple City residences and appointments",
+    "copy": "Temple City airport transfers should be reserved to the exact residence, hotel, office, restaurant or event address rather than only the city name. Include a building, suite, passenger entrance or gate instruction when applicable, along with a mobile number for the lead traveler. If the itinerary includes another pickup or drop-off in the San Gabriel Valley, list that stop when requesting pricing so the confirmed schedule reflects the complete trip.",
+    "returnCopy": "For Temple City to John Wayne Airport departures, provide the airline, flight time and precise pickup address. Ask for a pickup recommendation that accounts for loading, the regional drive and the airline’s check-in guidance. Multiple passenger pickups should be arranged in advance, and luggage or oversized items should be disclosed before the vehicle is confirmed."
+  },
+  "vernon": {
+    "heading": "John Wayne Airport transportation for Vernon business and industrial destinations",
+    "copy": "Vernon airport trips frequently involve offices, warehouses, production facilities or other secured business properties. Provide the company or facility name, full street address and the correct visitor, security or passenger entrance so the chauffeur is not sent to a loading gate or service entrance. For a scheduled meeting, shift change or appointment, include the required arrival time and a reachable site contact when requesting the reservation.",
+    "returnCopy": "For Vernon to SNA, share the departure flight, exact pickup point and any security-access instructions. If the traveler must be collected inside a large facility or after a meeting, confirm where the vehicle can legally wait and whether the passenger will meet the chauffeur at a designated entrance. Add any intermediate stop before confirmation so the quote and pickup plan include the full itinerary."
+  },
+  "hawaiian-gardens": {
+    "heading": "Private John Wayne Airport car service for Hawaiian Gardens",
+    "copy": "For Hawaiian Gardens arrivals, provide the complete residential, hotel, business or entertainment destination address and a working passenger mobile number. If your party is continuing to another nearby city, include each requested stop when asking for pricing rather than adding it after pickup. Passenger count, luggage, child-seat requests and oversized items should be discussed before the vehicle is selected.",
+    "returnCopy": "For Hawaiian Gardens to John Wayne Airport, provide the airline, flight time and exact pickup location. If passengers are being collected from more than one address, reserve a multi-stop itinerary so the recommended schedule accounts for every pickup. Confirm the vehicle, full quote, waiting terms and any special request before travel."
+  },
   "avalon": {
     "heading": "SNA to a mainland ferry terminal for Avalon",
     "copy": "Avalon is on Catalina Island. Your ground transfer covers the mainland journey from John Wayne Airport to the ferry terminal you have booked; the ferry crossing is a separate part of the trip. Share the ferry operator, departure port, sailing time and check-in requirement before reserving the car. Do not use your Avalon hotel address as the mainland drop-off location.",
