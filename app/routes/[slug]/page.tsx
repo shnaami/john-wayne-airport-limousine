@@ -253,6 +253,16 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "monrovia": {
+    "heading": "Private John Wayne Airport limousine and car service for Monrovia",
+    "copy": "Monrovia airport transportation can be arranged for residences, hotels, offices, medical appointments, campuses and private events. Provide the full street address, the correct passenger entrance and any required arrival time when reserving. If another traveler is being collected in Arcadia, Duarte, Pasadena or a nearby city, include that stop before confirmation so the John Wayne Airport car or limousine reservation reflects the complete itinerary.",
+    "returnCopy": "For Monrovia to SNA, share the airline, departure time, exact pickup location, passenger count and luggage. Ask for a pickup recommendation that accounts for loading, the regional drive and airline check-in guidance. Confirm the vehicle category, total quote, waiting terms and every additional stop before travel."
+  },
+  "culver-city": {
+    "heading": "John Wayne Airport limousine and car service for Culver City",
+    "copy": "Culver City airport transfers can support residences, hotels, offices, studios, production facilities, restaurants and business appointments. Provide the exact destination address and correct passenger or visitor entrance, especially for large studio or office properties with multiple gates. For production, executive or meeting travel, include the required arrival time and any additional Los Angeles-area stop when requesting the quote.",
+    "returnCopy": "For Culver City to John Wayne Airport, provide the airline, flight time, pickup entrance, passenger count and luggage. If the traveler is leaving a studio, meeting or secured property, include access instructions and a working mobile contact. Confirm any sedan, SUV or limousine request, waiting terms and planned stops before the reservation is finalized."
+  },
   "agoura-hills": {
     "heading": "Private John Wayne Airport limousine and car service for Agoura Hills",
     "copy": "Agoura Hills airport transportation can be arranged for residences, hotels, offices, event venues and business appointments. Provide the exact street address, gate or guest-entry instructions and a working passenger mobile number when reserving. If the itinerary includes another stop in Westlake Village, Calabasas or elsewhere in the Conejo Valley, include it before confirmation so the car or limousine quote reflects the complete trip.",
