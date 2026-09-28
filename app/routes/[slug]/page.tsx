@@ -253,6 +253,31 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "agoura-hills": {
+    "heading": "Private John Wayne Airport limousine and car service for Agoura Hills",
+    "copy": "Agoura Hills airport transportation can be arranged for residences, hotels, offices, event venues and business appointments. Provide the exact street address, gate or guest-entry instructions and a working passenger mobile number when reserving. If the itinerary includes another stop in Westlake Village, Calabasas or elsewhere in the Conejo Valley, include it before confirmation so the car or limousine quote reflects the complete trip.",
+    "returnCopy": "For Agoura Hills to SNA, share the airline, flight time, exact pickup location, passenger count and luggage. Request a pickup recommendation that accounts for property access, loading, the longer regional drive and airline check-in guidance. Confirm the vehicle category, waiting terms and every planned stop before travel."
+  },
+  "la-canada-flintridge": {
+    "heading": "John Wayne Airport limousine and corporate car service for La Cañada Flintridge",
+    "copy": "La Cañada Flintridge airport transfers can support residential travel, executive transportation, corporate appointments, schools, events and private meetings. Provide the complete destination address, the correct passenger or visitor entrance and any required arrival time. For corporate travel, include the company or meeting location and identify additional stops before confirmation so the chauffeur schedule and quote reflect the full itinerary.",
+    "returnCopy": "For La Cañada Flintridge to John Wayne Airport, provide the airline, departure time, pickup address, passenger count and luggage. If the traveler is leaving a meeting or gated residence, include access details and a working mobile contact. Confirm any sedan, SUV or limousine request, waiting terms and multi-stop requirements before booking."
+  },
+  "diamond-bar": {
+    "heading": "Private SNA limousine and car service for Diamond Bar",
+    "copy": "Diamond Bar airport transportation can be reserved for homes, hotels, offices, business parks, events and private appointments. Give reservations the exact address, gate or building instructions and a working passenger contact rather than only the city name. If another passenger is being collected in Walnut, Pomona, Rowland Heights or a nearby community, include that stop when requesting the quote so the car or limousine reservation reflects the complete trip.",
+    "returnCopy": "For Diamond Bar to John Wayne Airport, share the airline, flight time, pickup location, passenger count and luggage. Multiple household or business pickups should be arranged as a multi-stop itinerary in advance. Confirm the vehicle category, total quoted amount, waiting terms and any special request before the reservation is finalized."
+  },
+  "pomona": {
+    "heading": "John Wayne Airport limousine and car service for Pomona",
+    "copy": "Pomona airport transfers may involve residences, hotels, universities, medical centers, fairground or event destinations, offices and private appointments. Provide the full address and correct passenger entrance, and include a required arrival time for campuses, meetings or events. If the itinerary includes another stop in Claremont, Diamond Bar, La Verne or a nearby city, list it before confirmation so the reservation and quote cover every leg.",
+    "returnCopy": "For Pomona to SNA, provide the departure flight, exact pickup point, passenger count and luggage. Ask for a pickup recommendation that accounts for loading, the regional drive and airline check-in guidance. Confirm any sedan, SUV or limousine request, waiting terms and all additional stops before travel."
+  },
+  "bellflower": {
+    "heading": "Private John Wayne Airport limousine and car service for Bellflower",
+    "copy": "Bellflower airport transportation can be arranged for residences, hotels, businesses, medical appointments, events and local destinations. Provide the complete street address, correct passenger entrance and a working mobile number. If another traveler is being collected in Lakewood, Cerritos, Downey or a nearby city, include that stop in the original quote so the car or limousine reservation reflects the full itinerary.",
+    "returnCopy": "For Bellflower to John Wayne Airport, share the airline, departure time, precise pickup location, passenger count and luggage. Arrange multiple pickups in advance and ask for a recommended schedule that accounts for loading and airline check-in guidance. Confirm the vehicle category, total price and waiting terms before booking."
+  },
   "glendale": {
     "heading": "Private John Wayne Airport limousine and car service for Glendale",
     "copy": "Glendale airport transportation can be arranged for hotels, residences, offices, studios, medical appointments and event destinations. Provide the exact street address and the correct passenger entrance, especially for larger properties or business complexes. If the itinerary includes a meeting, production call time or another pickup elsewhere in Glendale or Los Angeles, include that timing and stop when requesting the quote so the car or limousine reservation reflects the complete trip.",
