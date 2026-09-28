@@ -63,13 +63,13 @@ const slugify = (city:string) => city.toLowerCase().replace(/[^a-z0-9]+/g,"-").r
 
 const specialCopy: Record<string,string> = {
   "Avalon":"Private SNA ground transportation to mainland ferry terminals for onward travel to Avalon on Catalina Island. Ferry travel is booked separately.",
-  "Newport Beach":"Private SNA airport transportation to Newport Beach, Newport Coast, Balboa, Fashion Island and area hotels.",
+  "Newport Beach":"Private car service from John Wayne Airport (SNA) to Newport Beach, Newport Coast, Balboa and Fashion Island, with return airport transfers available.",
   "Irvine":"Executive and private airport transportation between SNA and Irvine offices, hotels, UC Irvine and residential neighborhoods.",
   "Laguna Beach":"Prearranged SNA transfers to Laguna Beach resorts, downtown, residences, weddings and coastal destinations.",
   "Anaheim":"Private transportation from SNA to Anaheim hotels, convention destinations and the Anaheim Resort area.",
   "Mission Viejo":"Door-to-door airport transportation between SNA and Mission Viejo homes, businesses and hotels.",
   "Laguna Niguel":"Private SNA transportation for Laguna Niguel residents, guests, resorts and business travelers.",
-  "Dana Point":"Airport transfers to Dana Point Harbor, coastal resorts, residences, weddings and business destinations.",
+  "Dana Point":"Private car service from John Wayne Airport (SNA) to Dana Point Harbor, coastal resorts, residences and business destinations, with return SNA transfers available.",
   "San Clemente":"Comfortable airport transportation south to San Clemente for homes, hotels, events and coastal travel.",
   "Costa Mesa":"Fast, prearranged airport transportation to South Coast Plaza, Segerstrom Center, hotels and businesses.",
   "Tustin":"Private airport transportation from SNA to Tustin residences, offices, hotels and nearby destinations.",
