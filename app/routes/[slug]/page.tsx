@@ -253,6 +253,31 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "glendale": {
+    "heading": "Private John Wayne Airport limousine and car service for Glendale",
+    "copy": "Glendale airport transportation can be arranged for hotels, residences, offices, studios, medical appointments and event destinations. Provide the exact street address and the correct passenger entrance, especially for larger properties or business complexes. If the itinerary includes a meeting, production call time or another pickup elsewhere in Glendale or Los Angeles, include that timing and stop when requesting the quote so the car or limousine reservation reflects the complete trip.",
+    "returnCopy": "For Glendale to SNA, provide the airline, flight time, precise pickup location, passenger count and luggage. Ask for a pickup recommendation that accounts for loading, the regional drive and airline check-in guidance. Confirm any sedan, SUV or limousine request, waiting terms and additional stops before the reservation is finalized."
+  },
+  "baldwin-park": {
+    "heading": "John Wayne Airport limousine and car service for Baldwin Park",
+    "copy": "Baldwin Park airport transfers can be planned for homes, hotels, offices, medical appointments, campuses and private events. Give reservations the complete address, building or passenger entrance and any required arrival time. If another traveler is being collected in West Covina, Covina, Irwindale or a nearby city, include that stop before confirmation so the chauffeur schedule and quote cover the entire itinerary.",
+    "returnCopy": "For Baldwin Park to John Wayne Airport, share the departure flight, exact pickup location, passenger count and luggage. Multiple pickups should be arranged as a multi-stop reservation rather than added during travel. Confirm the vehicle category, full quoted amount, waiting terms and any special request before booking."
+  },
+  "santa-fe-springs": {
+    "heading": "Private SNA limousine and car service for Santa Fe Springs",
+    "copy": "Santa Fe Springs airport transportation often involves industrial parks, offices, warehouses, hotels and secured commercial destinations. Provide the company or facility name, full street address and the correct visitor or passenger entrance so the chauffeur is not directed to a loading dock or service gate. For a timed business appointment, event or shift-sensitive trip, include the required arrival time and a reachable site contact when arranging the car or limousine service.",
+    "returnCopy": "For Santa Fe Springs to John Wayne Airport, provide the airline, departure time, exact pickup point and any security or gate instructions. If the trip includes another stop in Whittier, Norwalk, Downey or a nearby city, add it before confirmation so the recommended schedule and total quote account for the full itinerary."
+  },
+  "redondo-beach": {
+    "heading": "John Wayne Airport limousine and car service for Redondo Beach",
+    "copy": "Redondo Beach airport transfers may end at waterfront hotels, residences, offices, restaurants, marinas or event destinations. Provide the complete address and correct passenger entrance, and tell reservations about surfboards, golf bags or oversized luggage before the vehicle is selected. If the itinerary continues to another South Bay destination, include that stop in the original quote rather than adding it after pickup.",
+    "returnCopy": "For Redondo Beach to SNA, share the airline, flight time, precise pickup address, passenger count and luggage. Ask for a pickup recommendation that accounts for loading, the longer airport transfer and airline check-in guidance. Confirm any sedan, SUV or limousine request and every additional stop before travel."
+  },
+  "malibu": {
+    "heading": "Private John Wayne Airport limousine and car service for Malibu",
+    "copy": "Malibu airport transportation can involve coastal hotels, residences, gated properties, event venues and business appointments spread along Pacific Coast Highway and surrounding canyon roads. Provide the exact address, gate or guest-entry instructions and a working passenger mobile number when reserving. If your itinerary includes another stop in Santa Monica, Beverly Hills or elsewhere in Los Angeles County, include it before confirmation so the full trip is reflected in the car or limousine quote.",
+    "returnCopy": "For Malibu to John Wayne Airport, provide the airline, departure time, exact pickup point, passenger count and luggage. Request a pickup recommendation that accounts for property access, loading, the longer drive and airline check-in guidance. Confirm the vehicle category, waiting terms and all planned stops before the reservation is finalized."
+  },
   "bell": {
     "heading": "Private John Wayne Airport limousine and car service for Bell",
     "copy": "Bell airport transfers can be arranged for residences, hotels, businesses, appointments and private events. Provide the exact street address and correct passenger entrance, especially when a property has multiple driveways or parking areas. If another passenger is being collected in Bell Gardens, Maywood, Cudahy or a nearby city, list that stop when requesting the quote so the car or limousine reservation reflects the full itinerary.",
