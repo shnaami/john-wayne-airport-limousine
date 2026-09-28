@@ -253,6 +253,21 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "bell": {
+    "heading": "Private John Wayne Airport limousine and car service for Bell",
+    "copy": "Bell airport transfers can be arranged for residences, hotels, businesses, appointments and private events. Provide the exact street address and correct passenger entrance, especially when a property has multiple driveways or parking areas. If another passenger is being collected in Bell Gardens, Maywood, Cudahy or a nearby city, list that stop when requesting the quote so the car or limousine reservation reflects the full itinerary.",
+    "returnCopy": "For Bell to SNA, share the airline, departure time, pickup address, passenger count and luggage. Ask for a pickup recommendation that accounts for loading, regional traffic and airline check-in guidance. Confirm the vehicle category, total price, waiting terms and every requested stop before the reservation is finalized."
+  },
+  "covina": {
+    "heading": "John Wayne Airport limousine and car service for Covina",
+    "copy": "Covina airport transportation can be planned for homes, hotels, offices, medical appointments, campuses and events in the eastern San Gabriel Valley. Provide the complete address, building or passenger entrance and any requested arrival time when reserving. If the itinerary includes West Covina or another nearby pickup, include that location before confirmation so the chauffeur schedule and quote cover the complete trip.",
+    "returnCopy": "For Covina to John Wayne Airport, provide the airline, flight time, precise pickup location and luggage details. Multiple passenger pickups should be arranged as a multi-stop itinerary rather than added during travel. Confirm any sedan, SUV or limousine request, waiting terms and the total quoted amount before booking."
+  },
+  "irwindale": {
+    "heading": "Private SNA limousine and car service for Irwindale",
+    "copy": "Irwindale airport trips often involve industrial parks, offices, event venues, residences and secured business properties. Give reservations the company or facility name, complete street address and the correct visitor or passenger entrance so the chauffeur is not sent to a loading area or service gate. For a timed business appointment or event, include the required arrival time and a reachable site contact when arranging the car or limousine service.",
+    "returnCopy": "For Irwindale to John Wayne Airport, share the departure flight, exact pickup point and any gate or security instructions. If passengers are leaving a large facility, confirm where the vehicle can legally meet them. Add any stop in Azusa, Baldwin Park, Duarte or another nearby city before confirmation so the schedule and quote include the full itinerary."
+  },
   "south-gate": {
     "heading": "Private SNA limousine and car service for South Gate",
     "copy": "South Gate airport transportation can be arranged for residences, hotels, offices, medical appointments, events and business destinations. Provide the complete street address, the correct passenger entrance and a working mobile number rather than only the city name. If your itinerary includes another pickup in Southeast Los Angeles, list that stop when requesting the quote so the limousine or car-service reservation reflects the complete trip.",
