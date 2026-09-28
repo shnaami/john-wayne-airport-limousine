@@ -253,6 +253,31 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "For Laguna Woods arrivals, provide the complete residence or community address, gate information and a working passenger contact number. If a traveler has mobility-related requirements, discuss the specific vehicle and assistance needed with reservations before booking; standard airport transportation should not be assumed to provide medical transport.",
     "returnCopy": "For Laguna Woods to SNA, share the departure flight, exact pickup location, passenger count and luggage. Allow time for community access and loading, and confirm any additional stop before the trip."
   },
+  "south-gate": {
+    "heading": "Private SNA limousine and car service for South Gate",
+    "copy": "South Gate airport transportation can be arranged for residences, hotels, offices, medical appointments, events and business destinations. Provide the complete street address, the correct passenger entrance and a working mobile number rather than only the city name. If your itinerary includes another pickup in Southeast Los Angeles, list that stop when requesting the quote so the limousine or car-service reservation reflects the complete trip.",
+    "returnCopy": "For South Gate to John Wayne Airport, share the airline, departure time, passenger count, luggage and exact pickup location. Ask for a pickup recommendation that accounts for loading, regional traffic and airline check-in guidance. If the trip includes a second household, hotel or business pickup, arrange it in advance so the schedule and price include every stop."
+  },
+  "alhambra": {
+    "heading": "John Wayne Airport limousine and car service for Alhambra",
+    "copy": "Alhambra airport transfers may involve residences, hotels, restaurants, offices, campuses or appointments throughout the western San Gabriel Valley. Give reservations the full destination address and any building, guest-entry or parking instructions that could affect where the chauffeur should meet the party. For business travel or a timed appointment, include the required arrival time along with passenger and luggage details.",
+    "returnCopy": "For Alhambra to SNA, provide the departure flight, exact pickup address and any intermediate stop before confirmation. If several passengers are meeting from different locations, request a multi-stop itinerary rather than assuming extra pickups are included. Confirm the vehicle, total quote, waiting terms and any limousine or SUV request before travel."
+  },
+  "industry": {
+    "heading": "Private John Wayne Airport transportation for the City of Industry",
+    "copy": "City of Industry airport trips commonly involve offices, warehouses, distribution centers, hotels and secured commercial properties. Provide the company or facility name, complete address and the correct visitor or passenger entrance so the chauffeur is not directed to a loading dock or service gate. For meetings, trade appointments or shift-sensitive travel, include the required arrival time and a reachable site contact when arranging the car or limousine service.",
+    "returnCopy": "For the City of Industry to John Wayne Airport, share the airline, flight time, pickup point and any security or gate instructions. If the passenger will be leaving a large facility, identify the entrance where the vehicle can legally meet them. Add any additional business stop before confirmation so the recommended schedule and total quote reflect the full itinerary."
+  },
+  "hidden-hills": {
+    "heading": "Private SNA limousine and car service for Hidden Hills",
+    "copy": "Hidden Hills airport transportation often requires precise residential and gated-community instructions. Provide the full pickup or destination address, gate procedure, guest-entry information and a working passenger mobile number when reserving. If the trip includes an assistant, security contact or additional passenger pickup elsewhere in the western San Fernando Valley, include those details before the limousine or car-service reservation is confirmed.",
+    "returnCopy": "For Hidden Hills to John Wayne Airport, share the airline, flight time, passenger count, luggage and exact residential pickup point. Allow for community access and loading when requesting a pickup recommendation. If a second stop is needed in Calabasas, Westlake Village or another nearby city, include it in the itinerary so the schedule and quote cover the complete trip."
+  },
+  "bell-gardens": {
+    "heading": "John Wayne Airport limousine and car service for Bell Gardens",
+    "copy": "Bell Gardens airport transfers can be reserved for homes, hotels, businesses, events and local appointments. Provide the exact destination address and correct passenger entrance, especially for properties with multiple driveways or parking areas. Families and groups should list all passengers, luggage, child-seat requests and oversized items before the vehicle is assigned, and any additional stop should be included in the quote request.",
+    "returnCopy": "For Bell Gardens to SNA, provide the airline, departure time and precise pickup location. Ask for a pickup recommendation that accounts for loading, road conditions and airline check-in guidance. Confirm the requested sedan, SUV or limousine category, total price, waiting terms and any multi-stop pickup before the reservation is finalized."
+  },
   "temple-city": {
     "heading": "Private SNA car service for Temple City residences and appointments",
     "copy": "Temple City airport transfers should be reserved to the exact residence, hotel, office, restaurant or event address rather than only the city name. Include a building, suite, passenger entrance or gate instruction when applicable, along with a mobile number for the lead traveler. If the itinerary includes another pickup or drop-off in the San Gabriel Valley, list that stop when requesting pricing so the confirmed schedule reflects the complete trip.",
