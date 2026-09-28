@@ -268,6 +268,11 @@ export default async function RoutePage({params}:{params:Promise<{slug:string}>}
   const neighbors:Record<string,string[]>={"anaheim":["orange","buena-park","garden-grove","irvine"],"irvine":["newport-beach","tustin","costa-mesa","orange"],"newport-beach":["costa-mesa","irvine","laguna-beach","dana-point"],"laguna-beach":["newport-beach","dana-point","laguna-niguel"],"dana-point":["san-clemente","laguna-beach","san-juan-capistrano"],"san-clemente":["dana-point","san-juan-capistrano","mission-viejo"],"orange":["anaheim","tustin","irvine"],"avalon":["dana-point","long-beach","newport-beach"]};
   const related=(neighbors[slug] || ROUTES.filter(x=>x.slug!==slug && x.county===r.county).map(x=>x.slug).slice(0,6)).map(key=>ROUTES.find(x=>x.slug===key)!).filter(Boolean);
   const schema={"@context":"https://schema.org","@type":"Service",name:r.title,url:`${SITE_URL}/routes/${slug}`,areaServed:[r.city,r.county],serviceType:"John Wayne Airport private car and limousine service",provider:{"@id":BUSINESS_ID}};
+  const faqSchema=detail?{"@context":"https://schema.org","@type":"FAQPage",mainEntity:[
+    {"@type":"Question",name:"Where will I meet the chauffeur at SNA?",acceptedAnswer:{"@type":"Answer",text:"Confirm the meeting location in your reservation and contact your chauffeur after landing and collecting checked bags. Share your airline, flight number and a working mobile number. Meet-and-greet service and special assistance must be arranged in advance."}},
+    {"@type":"Question",name:"What should I include when requesting a quote?",acceptedAnswer:{"@type":"Answer",text:"Include your travel date, flight details, complete destination address, passenger count, luggage and requested stops. Ask reservations to confirm the full price, waiting charges, cancellation terms and any child-seat request before paying."}},
+    {"@type":"Question",name:slug==="avalon"?"Does the car booking include the ferry?":`Can I book the return trip from ${r.city}?`,acceptedAnswer:{"@type":"Answer",text:slug==="avalon"?"The car reservation covers the mainland transfer. Book the ferry separately and confirm its port and sailing time before arranging the airport ride.":"Request both journeys together, including the return flight and pickup address. Confirm each pickup time and tell reservations about any differences in passengers, luggage or stops on the return trip."}}
+  ]}:null;
   return <>
     <header className="topbar"><div className="shell nav"><Brand/><nav><Link href="/">Airport Service</Link><Link href="/private-aviation">Private Aviation</Link><Link href="/fleet">Fleet</Link><Link href="/service-areas">All Cities</Link><Link href="/#why">Why Us</Link></nav><div className="headerActions"><MobileMenu/><a className="phone" href={PHONE_HREF}><Phone size={18}/>{PHONE_DISPLAY}</a></div></div></header>
     <main>
@@ -280,5 +285,6 @@ export default async function RoutePage({params}:{params:Promise<{slug:string}>}
     <footer><div className="shell credits">John Wayne Airport Limousine · Private SNA transportation to {r.city} · {PHONE_DISPLAY}</div></footer>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:SITE_URL},{"@type":"ListItem",position:2,name:"Service areas",item:`${SITE_URL}/service-areas`},{"@type":"ListItem",position:3,name:r.city,item:`${SITE_URL}/routes/${slug}`}]})}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
+    {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>}
   </>;
 }
