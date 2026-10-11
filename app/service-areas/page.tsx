@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const orange = ROUTES.filter(r=>r.county==="Orange County");
 const la = ROUTES.filter(r=>r.county==="Los Angeles County");
 
-function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small><svg role="img" aria-label="Airport Limousine" viewBox="0 0 200 16" preserveAspectRatio="none"><text x="0" y="12" textLength="200" lengthAdjust="spacingAndGlyphs">AIRPORT LIMOUSINE</text></svg></small></strong></Link>}
 
 export default function ServiceAreas(){
   return <>

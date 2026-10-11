@@ -375,7 +375,7 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
   }
 };
 
-function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small><svg role="img" aria-label="Airport Limousine" viewBox="0 0 200 16" preserveAspectRatio="none"><text x="0" y="12" textLength="200" lengthAdjust="spacingAndGlyphs">AIRPORT LIMOUSINE</text></svg></small></strong></Link>}
 
 export default async function RoutePage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const r=ROUTES.find(x=>x.slug===slug); if(!r)notFound();

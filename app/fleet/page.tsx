@@ -10,7 +10,7 @@ export const metadata = {
   alternates: { canonical: "https://johnwayneairportlimousine.com/fleet" }
 };
 
-function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small>AIRPORT LIMOUSINE</small></strong></Link>}
+function Brand(){return <Link href="/" className="brand premiumBrand"><span className="jwMark">JW<Plane size={15}/></span><strong>JOHN WAYNE<small><svg role="img" aria-label="Airport Limousine" viewBox="0 0 200 16" preserveAspectRatio="none"><text x="0" y="12" textLength="200" lengthAdjust="spacingAndGlyphs">AIRPORT LIMOUSINE</text></svg></small></strong></Link>}
 
 const vehicles = [
   {name:"Lincoln Aviator",type:"Luxury SUV",capacity:"Up to 3 passengers",copy:"A refined private SUV for John Wayne Airport transfers, executive travel, couples and small parties who value a quiet, comfortable ride.",exterior:"/fleet/john-wayne-airport-lincoln-aviator-luxury-suv-exterior.webp",interior:"/fleet/john-wayne-airport-lincoln-aviator-luxury-interior.webp"},
