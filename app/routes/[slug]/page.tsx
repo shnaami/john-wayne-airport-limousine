@@ -33,6 +33,11 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "copy": "Newport Beach airport trips can end at a coastal resort, a Balboa Peninsula rental, a Newport Coast residence or an office near Fashion Island. Give the full street address and the correct guest entrance when booking. A hotel name alone may not identify the driveway where your party should meet the chauffeur. For a vacation rental, include access instructions and a passenger mobile number that will work after landing.",
     "returnCopy": "For Newport Beach to SNA departures, arrange pickup from your actual hotel or residence rather than using a general city meeting point. Tell us about beach equipment, golf bags and large suitcases before selecting the vehicle. If your day includes a stop at an office or another hotel, add that stop to the quote request so the pickup plan accounts for it."
   },
+  "newport-coast": {
+    "heading": "SNA car service to Newport Coast resorts and residences",
+    "copy": "For a Newport Coast arrival, provide the resort name or complete residential address, the correct passenger entrance and any gated-community instructions. Tell reservations about golf bags, strollers and oversized luggage before the vehicle is confirmed. If the trip includes a stop at Fashion Island, another hotel or a second residence, include it when requesting the quote.",
+    "returnCopy": "For Newport Coast to John Wayne Airport, share the airline, departure time and exact pickup entrance. Ask for a pickup recommendation that accounts for property access, luggage loading and airline check-in guidance. Reserve each stop and confirm the vehicle, total quote and pickup instructions before travel."
+  },
   "laguna-beach": {
     "heading": "Airport transportation for Laguna Beach coastal stays",
     "copy": "A Laguna Beach arrival may involve a downtown hotel, a coastal resort or a hillside vacation home. Include the entrance address and any access restrictions when reserving. For a wedding, separate your airport transfer from the event shuttle schedule: guests arriving on different flights may need different pickup times. Share the number of passengers and bags for each arrival.",
@@ -117,6 +122,16 @@ const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}
     "heading": "SNA car service for Costa Mesa hotels, offices and South Coast Metro",
     "copy": "Costa Mesa is immediately adjacent to John Wayne Airport, but the correct destination still matters. Provide the hotel, office, South Coast Plaza-area address or event entrance instead of only the city name. For meetings near South Coast Metro, include the building and appointment time so the reservation reflects the actual stop.",
     "returnCopy": "For Costa Mesa to SNA departures, share the airline and flight time along with the pickup entrance. A short drive does not remove the need to plan for loading, terminal access and airline check-in guidance. Add any office or hotel stop to the quote in advance."
+  },
+  "villa-park": {
+    "heading": "John Wayne Airport car service for Villa Park homes",
+    "copy": "For Villa Park arrivals, provide the complete residential address, driveway or agreed meeting point and any access instructions. Families should list passengers, checked bags, carry-ons, strollers and child-seat requests before selecting a sedan or SUV. Add any second household or business stop to the quote request.",
+    "returnCopy": "For Villa Park to SNA, provide the flight departure time, airline and exact pickup location. Confirm the pickup recommendation, vehicle capacity and complete itinerary before travel, including any additional passenger collection."
+  },
+  "anaheim-hills": {
+    "heading": "SNA airport transportation for Anaheim Hills",
+    "copy": "Anaheim Hills airport trips should use the full home, hotel or business address rather than a general Anaheim destination. Include the community entrance, gate instructions and passenger mobile number when applicable. Families should identify all luggage and child-seat requests before the vehicle is confirmed.",
+    "returnCopy": "For Anaheim Hills to John Wayne Airport, share the departure flight, pickup address and any access details. If passengers are collected from more than one residence, request a multi-stop itinerary so the quote and recommended schedule include every pickup."
   },
   "tustin": {
     "heading": "Private SNA transportation for Tustin and Tustin Legacy",
@@ -380,7 +395,7 @@ function Brand(){return <Link href="/" className="brand premiumBrand"><span clas
 export default async function RoutePage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const r=ROUTES.find(x=>x.slug===slug); if(!r)notFound();
   const detail=ROUTE_DETAILS[slug];
-  const neighbors:Record<string,string[]>={"anaheim":["orange","buena-park","garden-grove","irvine"],"irvine":["newport-beach","tustin","costa-mesa","orange"],"newport-beach":["costa-mesa","irvine","laguna-beach","dana-point"],"laguna-beach":["newport-beach","dana-point","laguna-niguel"],"dana-point":["san-clemente","laguna-beach","san-juan-capistrano"],"san-clemente":["dana-point","san-juan-capistrano","mission-viejo"],"orange":["anaheim","tustin","irvine"],"avalon":["dana-point","long-beach","newport-beach"]};
+  const neighbors:Record<string,string[]>={"anaheim":["anaheim-hills","orange","buena-park","garden-grove"],"anaheim-hills":["anaheim","villa-park","orange","yorba-linda"],"irvine":["newport-beach","newport-coast","tustin","costa-mesa"],"newport-beach":["newport-coast","costa-mesa","irvine","laguna-beach"],"newport-coast":["newport-beach","laguna-beach","irvine","costa-mesa"],"huntington-beach":["costa-mesa","newport-beach","fountain-valley","seal-beach"],"laguna-beach":["newport-coast","newport-beach","dana-point","laguna-niguel"],"laguna-niguel":["laguna-beach","dana-point","san-juan-capistrano","mission-viejo"],"costa-mesa":["newport-beach","huntington-beach","irvine","fountain-valley"],"rancho-santa-margarita":["mission-viejo","lake-forest","aliso-viejo","laguna-niguel"],"villa-park":["anaheim-hills","orange","tustin","yorba-linda"],"dana-point":["san-clemente","laguna-beach","laguna-niguel","san-juan-capistrano"],"san-clemente":["dana-point","san-juan-capistrano","mission-viejo"],"orange":["villa-park","anaheim-hills","tustin","irvine"],"avalon":["dana-point","long-beach","newport-beach"]};
   const related=(neighbors[slug] || ROUTES.filter(x=>x.slug!==slug && x.county===r.county).map(x=>x.slug).slice(0,6)).map(key=>ROUTES.find(x=>x.slug===key)!).filter(Boolean);
   const schema={"@context":"https://schema.org","@type":"Service",name:r.title,url:`${SITE_URL}/routes/${slug}`,areaServed:[r.city,r.county],serviceType:"John Wayne Airport private car and limousine service",provider:{"@id":BUSINESS_ID}};
   const faqSchema=detail?{"@context":"https://schema.org","@type":"FAQPage",mainEntity:[
