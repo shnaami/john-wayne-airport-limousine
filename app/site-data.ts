@@ -52,7 +52,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
 };
 
 const orangeCounty = [
-  "Aliso Viejo","Anaheim","Brea","Buena Park","Costa Mesa","Cypress","Dana Point","Fountain Valley","Fullerton","Garden Grove","Huntington Beach","Irvine","La Habra","La Palma","Laguna Beach","Laguna Hills","Laguna Niguel","Newport Beach","Orange","Placentia","Rancho Santa Margarita","San Clemente","San Juan Capistrano","Santa Ana","Seal Beach","Stanton","Tustin","Villa Park","Westminster","Yorba Linda","Laguna Woods","Lake Forest","Los Alamitos","Mission Viejo"
+  "Aliso Viejo","Anaheim","Anaheim Hills","Brea","Buena Park","Costa Mesa","Cypress","Dana Point","Fountain Valley","Fullerton","Garden Grove","Huntington Beach","Irvine","La Habra","La Palma","Laguna Beach","Laguna Hills","Laguna Niguel","Newport Beach","Newport Coast","Orange","Placentia","Rancho Santa Margarita","San Clemente","San Juan Capistrano","Santa Ana","Seal Beach","Stanton","Tustin","Villa Park","Westminster","Yorba Linda","Laguna Woods","Lake Forest","Los Alamitos","Mission Viejo"
 ] as const;
 
 const losAngelesCounty = [
@@ -64,6 +64,7 @@ const slugify = (city:string) => city.toLowerCase().replace(/[^a-z0-9]+/g,"-").r
 const specialCopy: Record<string,string> = {
   "Avalon":"Private SNA ground transportation to mainland ferry terminals for onward travel to Avalon on Catalina Island. Ferry travel is booked separately.",
   "Newport Beach":"Private car service from John Wayne Airport (SNA) to Newport Beach, Newport Coast, Balboa and Fashion Island, with return airport transfers available.",
+  "Newport Coast":"Private SNA car and SUV service to Newport Coast resorts, gated residences and coastal destinations, with return transportation to John Wayne Airport.",
   "Irvine":"Executive and private airport transportation between SNA and Irvine offices, hotels, UC Irvine and residential neighborhoods.",
   "Laguna Beach":"Prearranged SNA transfers to Laguna Beach resorts, downtown, residences, weddings and coastal destinations.",
   "Anaheim":"Private transportation from SNA to Anaheim hotels, convention destinations and the Anaheim Resort area.",
@@ -82,11 +83,13 @@ const specialCopy: Record<string,string> = {
   "Pasadena":"Private SNA airport transportation to Pasadena hotels, residences, meetings, events and the surrounding San Gabriel Valley.",
   "Inglewood":"Reserved transportation from SNA to Inglewood hotels, residences, events and nearby entertainment venues.",
   "Huntington Beach":"Private SNA airport transportation to Huntington Beach hotels, residences, waterfront destinations and events.",
+  "Anaheim Hills":"Private John Wayne Airport car and SUV service for Anaheim Hills residences, gated communities and business travel.",
   "Santa Ana":"Prearranged John Wayne Airport car service to Santa Ana offices, hotels, residences, appointments and events.",
   "Garden Grove":"Private SNA transportation to Garden Grove hotels, residences and Anaheim Resort-area destinations.",
   "Lake Forest":"Door-to-door John Wayne Airport transportation for Lake Forest homes, hotels, offices and business travel.",
   "Aliso Viejo":"Private SNA car service to Aliso Viejo residences, hotels, offices and local destinations.",
   "Rancho Santa Margarita":"Reserved John Wayne Airport transportation to Rancho Santa Margarita homes, businesses and local destinations.",
+  "Villa Park":"Private SNA airport car and SUV service for Villa Park homes, family travel and business itineraries.",
   "Fullerton":"Private SNA airport transportation to Fullerton hotels, residences, campuses, downtown and business destinations.",
   "Buena Park":"Prearranged John Wayne Airport car service to Buena Park hotels, attractions, residences and events.",
   "Fountain Valley":"Private SNA transportation to Fountain Valley homes, hotels, offices and appointment destinations.",
@@ -115,4 +118,4 @@ export const ROUTES: Route[] = [
   ...losAngelesCounty.map(city=>buildRoute(city,"Los Angeles County"))
 ];
 
-export const POPULAR_ROUTE_SLUGS = ["dana-point","newport-beach","irvine","laguna-beach","anaheim","laguna-niguel","san-clemente","mission-viejo","costa-mesa","tustin","laguna-hills","san-juan-capistrano"];
+export const POPULAR_ROUTE_SLUGS = ["newport-beach","newport-coast","huntington-beach","costa-mesa","laguna-beach","laguna-niguel","rancho-santa-margarita","anaheim-hills","villa-park","irvine","dana-point","anaheim"];
