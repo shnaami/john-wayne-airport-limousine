@@ -9,7 +9,12 @@ export function generateStaticParams(){ return ROUTES.map(r=>({slug:r.slug})); }
 
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
   const {slug}=await params; const r=ROUTES.find(x=>x.slug===slug); if(!r)return{};
-  return { title:{absolute:r.title}, description:r.copy, alternates:{canonical:`/routes/${slug}`}, openGraph:{title:r.title,description:r.copy,url:`${SITE_URL}/routes/${slug}`,images:[{url:"/john-wayne-airport-master.jpg",alt:"John Wayne Airport"}]},twitter:{card:"summary_large_image",title:r.title,description:r.copy,images:["/john-wayne-airport-master.jpg"]} };
+  const coastalDescriptions:Record<string,string> = {
+    "dana-point":"Private John Wayne Airport (SNA) car service to Dana Point resorts, harbor and homes. Prearranged black SUVs, flight-aware pickup and direct chauffeur transfers.",
+    "laguna-beach":"Reserve private John Wayne Airport (SNA) car service to Laguna Beach hotels, resorts and residences. Professional chauffeurs, luggage-ready SUVs and return transfers."
+  };
+  const description=coastalDescriptions[slug]||r.copy;
+  return { title:{absolute:r.title}, description, alternates:{canonical:`/routes/${slug}`}, openGraph:{title:r.title,description,url:`${SITE_URL}/routes/${slug}`,images:[{url:"/john-wayne-airport-master.jpg",alt:"John Wayne Airport"}]},twitter:{card:"summary_large_image",title:r.title,description,images:["/john-wayne-airport-master.jpg"]} };
 }
 
 const ROUTE_DETAILS:Record<string,{heading:string;copy:string;returnCopy:string}> = {
